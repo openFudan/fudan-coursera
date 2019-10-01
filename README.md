@@ -1,2 +1,1 @@
-# fudan-coursera
-复旦大学课程资源
+# <img src="https://github.com/openFudan/fudan-coursera/blob/master/images/logo.png" width="300" />
