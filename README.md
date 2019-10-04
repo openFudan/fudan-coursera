@@ -18,9 +18,15 @@
 在[DownGit](https://minhaskamal.github.io/DownGit/#/home)中输入某文件夹的网址，点击download即可下载。
 
 ## 课程
+所有课程的分类大致如下:
+<div text-align=center><img src="https://github.com/openFudan/fudan-coursera/blob/master/images/courseclass.png" width="600" /></div>
+
+
+<!--
 <b><details><summary>关于</summary></b>
 123
 </details>
+-->
 
 ## 贡献
 **欢迎贡献！**
