@@ -1,0 +1,37 @@
+.previous
+.abicalls
+.section .rodata.str1.4,"aMS",@progbits,1
+.align 2 # 2字节对齐也就是：2*2
+$LC0:
+.ascii "a == %d,b == %d,c == %d,c == %d\012\000"
+.text #程序段
+.align 2 #2字节对齐
+.globl main #全局变量
+.ent main #main函数的开始
+.type main, @function #类型，指定为函数，但是也可以是变量
+main:
+.frame $sp,40,$31 # vars= 0, regs= 1/0, args= 24, gp= 8
+.mask 0x80000000,-8
+.fmask 0x00000000,0
+.set noreorder #.set设置属性为不优化代码
+.cpload $25 #
+.set nomacro
+
+addiu $sp,$sp,-40 #将堆栈指针的值-40，会在程序的最后恢复sp的值
+sw $31,32($sp)
+.cprestore 24
+lw $4,%got($LC0)($28) #这一段是printf函数内的字符所在的got表中的地址加载(load)到$4寄存器中。
+lw $25,%call16(printf)($28) # t9代表的是printf函数在GOT表中的地址的值加载(load)到$25寄存器中
+li $2,1 # 0x1 #这是经过优化后的给d所赋得值
+sw $2,16($sp)
+addiu $4,$4,%lo($LC0)
+li $5,6 # 0x6 #这是加载a=b*c的值的操作
+li $6,2 # 0x2 #加载b的值到$6寄存器中
+jalr $25
+li $7,3 # 0x3 #加载c的值到$7寄存器中
+
+lw $28,24($sp)
+lw $31,32($sp)
+li $2,6 # 0x6
+j $31 #跳转到函数的结束
+addiu $sp,$sp,40 #恢复在main函数开始的时候对堆栈指针的操作

@@ -1,0 +1,105 @@
+{
+IF: ['3 closure lines']
+THEN: 'the shape is triangle'
+DESCRIPTION: 'triangle'
+}
+{
+IF: ['the shape is triangle', '2 lines are equal']
+THEN: 'the shape is isosceles triangle'
+DESCRIPTION: 'isosceles triangle'
+}
+{
+IF: ['the shape is triangle', 'lines are all equal']
+THEN: 'the shape is equilateral triangle'
+DESCRIPTION: 'equilateral triangle'
+}
+{
+IF: ['the shape is triangle', '3 angles are acute angle']
+THEN: 'the shape is acute triangle'
+DESCRIPTION: 'acute triangle'
+}
+{
+IF: ['the shape is triangle', '1 angle is right angle']
+THEN: 'the shape is right triangle'
+DESCRIPTION: 'right triangle'
+}
+{
+IF: ['the shape is triangle', '1 angle is obtuse angle']
+THEN: 'the shape is obtuse triangle'
+DESCRIPTION: 'obtuse triangle'
+}
+{
+IF: ['the shape is right triangle', 'the shape is isosceles triangle']
+THEN: 'the shape is right and isosceles triangle'
+DESCRIPTION: 'right and isosceles triangle'
+}
+{
+IF: ['the shape is acute triangle', 'the shape is isosceles triangle']
+THEN: 'the shape is acute and isosceles triangle'
+DESCRIPTION: 'acute and isosceles triangle'
+}
+{
+IF: ['the shape is obtuse triangle', 'the shape is isosceles triangle']
+THEN: 'the shape is obtuse and isosceles triangle'
+DESCRIPTION: 'obtuse and isosceles triangle'
+}
+{
+IF: ['4 closure lines']
+THEN: 'the shape is quadrilateral'
+DESCRIPTION: 'quadrilateral'
+}
+{
+IF: ['the shape is quadrilateral', '2 pairs of parallel lines']
+THEN: 'the shape is parallelogram'
+DESCRIPTION: 'parallelogram'
+}
+{
+IF: ['the shape is parallelogram', 'lines are all equal']
+THEN: 'the shape is rhombus'
+DESCRIPTION: 'rhombus'
+}
+{
+IF: ['the shape is parallelogram', '4 angles are right angle']
+THEN: 'the shape is rectangle'
+DESCRIPTION: 'rectangle'
+}
+{
+IF: ['the shape is rectangle', 'lines are all equal']
+THEN: 'the shape is square'
+DESCRIPTION: 'square'
+}
+{
+IF: ['the shape is quadrilateral', '1 pairs of parallel lines']
+THEN: 'the shape is trapezoid'
+DESCRIPTION: 'trapezoid'
+}
+{
+IF: ['the shape is trapezoid', '2 lines are equal']
+THEN: 'the shape is isosceles trapezoid'
+DESCRIPTION: 'isosceles trapezoid'
+}
+{
+IF: ['the shape is trapezoid', '1 angle is right angle']
+THEN: 'the shape is right trapezoid'
+DESCRIPTION: 'right trapezoid'
+}
+{
+IF: ['5 closure lines']
+THEN: 'the shape is pentagon'
+DESCRIPTION: 'pentagon'
+}
+{
+IF: ['the shape is pentagon', 'lines are all equal']
+THEN: 'the shape is regular pentagon'
+DESCRIPTION: 'regular pentagon'
+}
+{
+IF: ['6 closure lines']
+THEN: 'the shape is hexagon'
+DESCRIPTION: 'hexagon'
+}
+{
+IF: ['the shape is hexagon', 'lines are all equal']
+THEN: 'the shape is regular hexagon'
+DESCRIPTION: 'regular hexagon'
+}

@@ -1,0 +1,26 @@
+1. 假定一个计算机系统具有如下性能特征：处理一次中断，平均耗用1ms；一次进程调度，平均需要2ms；将CPU分配给选中的进程，平均需要1ms。在假设其定时器芯片每秒产生100次中断。请回答：
+
+A)操作系统将百分之几的CPU时间用于时钟中断处理？
+
+B)如果操作系统采用轮转法调度，10个时钟中断为一个时间片，那么，操作系统将百分之几的CPU时间用于进程调度（包括调度、分配CPU和引起调度的时钟中断处理时间）？
+
+2. Please prove that the shortest process next algorithm is the best non-preemptive scheduling policy when all the processes are available simultaneously.
+
+3. Consider a paged logical address space (composed of 32 pages of 2 Kbytes each) mapped into a 1-Mbyte physical memory address.
+(a) what is the format of the processor’s logical address?
+(b) what is the length and width of the page table (disregarding the “access rights” bits)?
+(c) what is the effect on the page table if the physical memory space is reduced by half?
+
+
+
+（1）考虑某进程的页面访问流：
+1, 2, 3, 4, 2, 1, 5, 6, 2, 1, 2, 3, 7, 6, 3, 2, 1, 2, 3, 6.
+如果使用固定分配和请求式调页策略，当为该进程分配的物理内存帧数量为4时，Optimal Policy、LRU Policy以及FIFO policy将分别产生多少次缺页故障，请给出计算过程。
+ 
+（2）什么是工作集？工作集策略是如何工作的？它如何进行负载控制？
+ 
+（3）某计算机有64位虚地址空间，且页的大小是2048B，每个页表项长为4B。因为所有页表都必须包含在一页中，所以使用多级页表。问一共需要多少级？
+
+
+
+https://wenku.baidu.com/view/4d550918e45c3b3567ec8b88

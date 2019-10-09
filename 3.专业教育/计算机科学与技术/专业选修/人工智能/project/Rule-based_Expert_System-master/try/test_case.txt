@@ -1,0 +1,28 @@
+# triangle 1
+0
+0
+3
+0
+0
+4
+# triangle 2
+0
+0
+0
+10
+5
+5
+# triangle 3
+0
+0
+0
+2
+3
+3
+# triangle 4 (not a triangle)
+0
+0
+10
+0
+5
+0

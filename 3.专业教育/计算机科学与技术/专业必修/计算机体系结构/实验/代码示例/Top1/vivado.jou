@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Mon Mar 19 10:05:02 2018
+# Process ID: 5384
+# Log file: C:/Users/Administrator/Desktop/study/专业课/体系结构/实验/代码示例/Top1/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/study/专业课/体系结构/实验/代码示例/Top1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Desktop/study/专业课/体系结构/实验/代码示例/Top1/Top1.xpr
+close_project
+open_project C:/Users/Administrator/Desktop/study/vilab/test/project_1/project_1.xpr
+add_files -norecurse C:/Users/Administrator/Desktop/study/专业课/体系结构/实验/tfile/Detect101/Detect101.srcs/sources_1/new/Detect101.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+launch_simulation
+source Detect101.tcl
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+open_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+remove_files C:/Users/Administrator/Desktop/study/专业课/体系结构/实验/tfile/Detect101/Detect101.srcs/sources_1/new/Detect101.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+add_files -norecurse C:/Users/Administrator/Desktop/study/专业课/数逻实验/lab1/project_1/project_1.srcs/sources_1/new/lab1.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+close_sim

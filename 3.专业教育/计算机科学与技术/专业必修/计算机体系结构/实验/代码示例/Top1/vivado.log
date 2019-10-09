@@ -1,0 +1,162 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Mon Mar 19 10:05:02 2018
+# Process ID: 5384
+# Log file: C:/Users/Administrator/Desktop/study/专业课/体系结构/实验/代码示例/Top1/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/study/专业课/体系结构/实验/代码示例/Top1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 19 10:05:36 2018...
+码示例/Top1/Top1.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Sam/Documents/Vivado2015/Top1' since last save.
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name CompiledLibDirModelSim
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name CompiledLibDirQuesta
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name CompiledLibDirIES
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name CompiledLibDirVCS
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name CompiledLibDirRiviera
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name CompiledLibDirActivehdl
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name CreateRefXciForCoreContainers
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name IPUserFilesDir
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name IPStaticSourceDir
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name EnableBDX
+WARNING: [Project 1-231] Project 'Top1.xpr' was created with a future version and may or may not perform reliably with this version of Vivado. It has been opened in read-only mode for the protection of unrecognized data. Use 'File | Save Project As...' if you wish to alter a copy of the project.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/study/vivado/Vivado/2015.2/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 665.406 ; gain = 88.680
+close_project
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Administrator/Desktop/study/专业课/体系结构/实验/代码示例/Top1/Top1.hw/webtalk/labtool_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 754293123 -regid "210875461_0_0_541" -xml C:/Users/Administrator/Desktop/study/专业课/体系结构/实验/代码示例/T..."
+    (file "C:/Users/Administrator/Desktop/study/专业课/体系结构/实验/代码示例/Top1/Top1.hw/webtalk/labtool_webtalk.tcl" line 26)
+INFO: [Common 17-206] Exiting Webtalk at Mon Mar 19 10:06:44 2018...
+close_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 674.172 ; gain = 0.000
+open_project C:/Users/Administrator/Desktop/study/vilab/test/project_1/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/study/vivado/Vivado/2015.2/data/ip'.
+add_files -norecurse C:/Users/Administrator/Desktop/study/专业课/体系结构/实验/tfile/Detect101/Detect101.srcs/sources_1/new/Detect101.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'Detect101' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in 'C:/Users/Administrator/Desktop/study/vilab/test/project_1/project_1.sim/sim_1/behav'
+"xvlog -m64 --relax -prj Detect101_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/study/专业课/体系结构/实验/tfile/Detect101/Detect101.srcs/sources_1/new/Detect101.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Detect101
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/study/vilab/test/project_1/project_1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Administrator/Desktop/study/vilab/test/project_1/project_1.sim/sim_1/behav'
+Vivado Simulator 2015.2
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: D:/study/vivado/Vivado/2015.2/bin/unwrapped/win64.o/xelab.exe -wto c4396cf5c2ec40878246882e2ddbd97c --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Detect101_behav xil_defaultlib.Detect101 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Detect101
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot Detect101_behav
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Administrator/Desktop/study/vilab/test/project_1/project_1.sim/sim_1/behav/xsim.dir/Detect101_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 62.238 ; gain = 0.023
+
+    while executing
+"webtalk_transmit -clientid 1377037719 -regid "210875461_0_0_541" -xml C:/Users/Administrator/Desktop/study/vilab/test/project_1/project_1.sim/sim_1/be..."
+    (file "C:/Users/Administrator/Desktop/study/vilab/test/project_1/project_1.sim/sim_1/behav/xsim.dir/Detect101_behav/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Mon Mar 19 10:17:56 2018...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 716.371 ; gain = 0.000
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Administrator/Desktop/study/vilab/test/project_1/project_1.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Detect101_behav -key {Behavioral:sim_1:Functional:Detect101} -tclbatch {Detect101.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.2
+Time resolution is 1 ps
+source Detect101.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Detect101_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:24 . Memory (MB): peak = 720.574 ; gain = 4.203
+launch_runs impl_1 -jobs 2
+[Mon Mar 19 10:18:42 2018] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/study/vilab/test/project_1/project_1.runs/synth_1/runme.log
+[Mon Mar 19 10:18:42 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/study/vilab/test/project_1/project_1.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.2
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Administrator/Desktop/study/专业课/体系结构/实验/代码示例/Top1/.Xil/Vivado-4568-PC-20180310WIMU/dcp/Detect101.xdc]
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/study/专业课/体系结构/实验/代码示例/Top1/.Xil/Vivado-4568-PC-20180310WIMU/dcp/Detect101.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 942.777 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 942.777 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:26 ; elapsed = 00:00:15 . Memory (MB): peak = 1044.500 ; gain = 315.992
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Mon Mar 19 10:22:41 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/study/vilab/test/project_1/project_1.runs/impl_1/runme.log
+remove_files C:/Users/Administrator/Desktop/study/专业课/体系结构/实验/tfile/Detect101/Detect101.srcs/sources_1/new/Detect101.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+add_files -norecurse C:/Users/Administrator/Desktop/study/专业课/数逻实验/lab1/project_1/project_1.srcs/sources_1/new/lab1.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+[Mon Mar 19 10:27:36 2018] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/study/vilab/test/project_1/project_1.runs/synth_1/runme.log
+[Mon Mar 19 10:27:36 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/study/vilab/test/project_1/project_1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Mon Mar 19 10:30:22 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/study/vilab/test/project_1/project_1.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1567.379 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 19 10:32:54 2018...

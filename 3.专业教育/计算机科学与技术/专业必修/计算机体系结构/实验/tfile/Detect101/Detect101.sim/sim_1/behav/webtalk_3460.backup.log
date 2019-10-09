@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2015.4.2 (64-bit)
+# SW Build 1494164 on Fri Feb 26 04:18:56 MST 2016
+# IP Build 1491208 on Wed Feb 24 03:25:39 MST 2016
+# Start of session at: Wed Feb 08 10:14:03 2017
+# Process ID: 3460
+# Current directory: C:/Users/Sam/Documents/Vivado2015/Detect101/Detect101.sim/sim_1/behav
+# Command line: wbtcv.exe -mode batch -source C:/Users/Sam/Documents/Vivado2015/Detect101/Detect101.sim/sim_1/behav/xsim.dir/test2_Detect101_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/Sam/Documents/Vivado2015/Detect101/Detect101.sim/sim_1/behav/webtalk.log
+# Journal file: C:/Users/Sam/Documents/Vivado2015/Detect101/Detect101.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/Sam/Documents/Vivado2015/Detect101/Detect101.sim/sim_1/behav/xsim.dir/test2_Detect101_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Feb 08 10:14:03 2017...

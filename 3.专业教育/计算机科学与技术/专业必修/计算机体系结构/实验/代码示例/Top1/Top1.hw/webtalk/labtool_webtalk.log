@@ -1,0 +1,12 @@
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Administrator/Desktop/study/专业课/体系结构/实验/代码示例/Top1/Top1.hw/webtalk/labtool_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 754293123 -regid "210875461_0_0_541" -xml C:/Users/Administrator/Desktop/study/专业课/体系结构/实验/代码示例/T..."
+    (file "C:/Users/Administrator/Desktop/study/专业课/体系结构/实验/代码示例/Top1/Top1.hw/webtalk/labtool_webtalk.tcl" line 26)
+INFO: [Common 17-206] Exiting Webtalk at Mon Mar 19 10:06:44 2018...

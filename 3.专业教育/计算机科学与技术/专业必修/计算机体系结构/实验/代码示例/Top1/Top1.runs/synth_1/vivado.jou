@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4.2 (64-bit)
+# SW Build 1494164 on Fri Feb 26 04:18:56 MST 2016
+# IP Build 1491208 on Wed Feb 24 03:25:39 MST 2016
+# Start of session at: Wed Feb 08 15:29:14 2017
+# Process ID: 19016
+# Current directory: C:/Users/Sam/Documents/Vivado2015/Top1/Top1.runs/synth_1
+# Command line: vivado.exe -log Top1.vds -mode batch -messageDb vivado.pb -notrace -source Top1.tcl
+# Log file: C:/Users/Sam/Documents/Vivado2015/Top1/Top1.runs/synth_1/Top1.vds
+# Journal file: C:/Users/Sam/Documents/Vivado2015/Top1/Top1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Top1.tcl -notrace

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4.2 (64-bit)
+# SW Build 1494164 on Fri Feb 26 04:18:56 MST 2016
+# IP Build 1491208 on Wed Feb 24 03:25:39 MST 2016
+# Start of session at: Sat Feb 04 08:57:34 2017
+# Process ID: 9528
+# Current directory: C:/Users/Sam/Documents/Vivado2015/7SegmentLED/7SegmentLED.runs/impl_1
+# Command line: vivado.exe -log SevenSegmentDisplay.vdi -applog -messageDb vivado.pb -mode batch -source SevenSegmentDisplay.tcl -notrace
+# Log file: C:/Users/Sam/Documents/Vivado2015/7SegmentLED/7SegmentLED.runs/impl_1/SevenSegmentDisplay.vdi
+# Journal file: C:/Users/Sam/Documents/Vivado2015/7SegmentLED/7SegmentLED.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source SevenSegmentDisplay.tcl -notrace

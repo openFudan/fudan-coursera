@@ -1,0 +1,5 @@
+fudanPR@10.141.216.18
+123456
+
+sudo scp  -r    fudanPR@10.141.216.18:~/cnn      /home/ml
+du -h --max-depth=1 /usr   

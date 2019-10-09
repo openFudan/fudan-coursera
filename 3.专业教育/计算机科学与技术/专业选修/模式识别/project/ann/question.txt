@@ -1,0 +1,11 @@
+Write down the objective functions of ANN's with different criteria as follows:
+
+(1)sum of squared errors (referred to the slides)  + regularized term
+
+(2) cross entropy
+
+(3) cross entropy + regularized term
+
+ 
+
+Then, show the back-propagation solutions and  run the experiments (the same data as KNN)accordingly.  

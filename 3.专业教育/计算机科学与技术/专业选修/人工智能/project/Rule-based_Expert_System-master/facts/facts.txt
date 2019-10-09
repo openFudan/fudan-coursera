@@ -1,0 +1,413 @@
+Contour #0
+{
+--About Lines-- 5 lines
+<
+2 lines are equal
+(288, 224)-->(360, 275): Length: 88.23, Angle:35.31
+(360, 275)-->(332, 360): Length: 89.49, Angle:-71.77
+>
+<
+2 lines are equal
+(288, 224)-->(360, 275): Length: 88.23, Angle:35.31
+(332, 360)-->(245, 360): Length: 87.00, Angle:0.00
+>
+<
+2 lines are equal
+(288, 224)-->(360, 275): Length: 88.23, Angle:35.31
+(245, 360)-->(217, 276): Length: 88.54, Angle:71.57
+>
+<
+2 lines are equal
+(288, 224)-->(360, 275): Length: 88.23, Angle:35.31
+(217, 276)-->(288, 224): Length: 88.01, Angle:-36.22
+>
+<
+2 lines are equal
+(360, 275)-->(332, 360): Length: 89.49, Angle:-71.77
+(332, 360)-->(245, 360): Length: 87.00, Angle:0.00
+>
+<
+2 lines are equal
+(360, 275)-->(332, 360): Length: 89.49, Angle:-71.77
+(245, 360)-->(217, 276): Length: 88.54, Angle:71.57
+>
+<
+2 lines are equal
+(360, 275)-->(332, 360): Length: 89.49, Angle:-71.77
+(217, 276)-->(288, 224): Length: 88.01, Angle:-36.22
+>
+<
+2 lines are equal
+(332, 360)-->(245, 360): Length: 87.00, Angle:0.00
+(245, 360)-->(217, 276): Length: 88.54, Angle:71.57
+>
+<
+2 lines are equal
+(332, 360)-->(245, 360): Length: 87.00, Angle:0.00
+(217, 276)-->(288, 224): Length: 88.01, Angle:-36.22
+>
+<
+2 lines are equal
+(245, 360)-->(217, 276): Length: 88.54, Angle:71.57
+(217, 276)-->(288, 224): Length: 88.01, Angle:-36.22
+>
+<
+5 closure lines
+(288, 224)-->(360, 275): Length: 88.23, Angle:35.31
+(360, 275)-->(332, 360): Length: 89.49, Angle:-71.77
+(332, 360)-->(245, 360): Length: 87.00, Angle:0.00
+(245, 360)-->(217, 276): Length: 88.54, Angle:71.57
+(217, 276)-->(288, 224): Length: 88.01, Angle:-36.22
+>
+<
+lines are all equal
+(288, 224)-->(360, 275): Length: 88.23, Angle:35.31
+(360, 275)-->(332, 360): Length: 89.49, Angle:-71.77
+(332, 360)-->(245, 360): Length: 87.00, Angle:0.00
+(245, 360)-->(217, 276): Length: 88.54, Angle:71.57
+(217, 276)-->(288, 224): Length: 88.01, Angle:-36.22
+>
+--About Angles--
+<
+1 angle is obtuse angle
+(288, 224)-->(360, 275): Length: 88.23, Angle:35.31
+(360, 275)-->(332, 360): Length: 89.49, Angle:-71.77
+>
+<
+1 angle is obtuse angle
+(288, 224)-->(360, 275): Length: 88.23, Angle:35.31
+(217, 276)-->(288, 224): Length: 88.01, Angle:-36.22
+>
+<
+1 angle is obtuse angle
+(360, 275)-->(332, 360): Length: 89.49, Angle:-71.77
+(332, 360)-->(245, 360): Length: 87.00, Angle:0.00
+>
+<
+1 angle is obtuse angle
+(332, 360)-->(245, 360): Length: 87.00, Angle:0.00
+(245, 360)-->(217, 276): Length: 88.54, Angle:71.57
+>
+<
+1 angle is obtuse angle
+(245, 360)-->(217, 276): Length: 88.54, Angle:71.57
+(217, 276)-->(288, 224): Length: 88.01, Angle:-36.22
+>
+}
+Contour #1
+{
+--About Lines-- 4 lines
+<
+2 lines are equal
+(36, 199)-->(185, 200): Length: 149.00, Angle:0.38
+(184, 377)-->(35, 376): Length: 149.00, Angle:0.38
+>
+<
+2 lines are equal
+(185, 200)-->(184, 377): Length: 177.00, Angle:-89.68
+(35, 376)-->(36, 199): Length: 177.00, Angle:-89.68
+>
+<
+4 closure lines
+(36, 199)-->(185, 200): Length: 149.00, Angle:0.38
+(185, 200)-->(184, 377): Length: 177.00, Angle:-89.68
+(184, 377)-->(35, 376): Length: 149.00, Angle:0.38
+(35, 376)-->(36, 199): Length: 177.00, Angle:-89.68
+>
+--About Angles--
+<
+1 angle is right angle
+(36, 199)-->(185, 200): Length: 149.00, Angle:0.38
+(185, 200)-->(184, 377): Length: 177.00, Angle:-89.68
+>
+<
+1 angle is right angle
+(36, 199)-->(185, 200): Length: 149.00, Angle:0.38
+(35, 376)-->(36, 199): Length: 177.00, Angle:-89.68
+>
+<
+1 angle is right angle
+(185, 200)-->(184, 377): Length: 177.00, Angle:-89.68
+(184, 377)-->(35, 376): Length: 149.00, Angle:0.38
+>
+<
+1 angle is right angle
+(184, 377)-->(35, 376): Length: 149.00, Angle:0.38
+(35, 376)-->(36, 199): Length: 177.00, Angle:-89.68
+>
+<
+2 pairs of parallel lines
+(36, 199)-->(185, 200): Length: 149.00, Angle:0.38
+(184, 377)-->(35, 376): Length: 149.00, Angle:0.38
+(185, 200)-->(184, 377): Length: 177.00, Angle:-89.68
+(35, 376)-->(36, 199): Length: 177.00, Angle:-89.68
+>
+<
+4 angles are right angle
+(36, 199)-->(185, 200): Length: 149.00, Angle:0.38
+(185, 200)-->(184, 377): Length: 177.00, Angle:-89.68
+(36, 199)-->(185, 200): Length: 149.00, Angle:0.38
+(35, 376)-->(36, 199): Length: 177.00, Angle:-89.68
+(185, 200)-->(184, 377): Length: 177.00, Angle:-89.68
+(184, 377)-->(35, 376): Length: 149.00, Angle:0.38
+(184, 377)-->(35, 376): Length: 149.00, Angle:0.38
+(35, 376)-->(36, 199): Length: 177.00, Angle:-89.68
+>
+}
+Contour #2
+{
+--About Lines-- 4 lines
+<
+2 lines are equal
+(366, 209)-->(285, 208): Length: 81.01, Angle:0.71
+(286, 156)-->(367, 145): Length: 81.74, Angle:-7.73
+>
+<
+4 closure lines
+(367, 145)-->(366, 209): Length: 64.01, Angle:-89.10
+(366, 209)-->(285, 208): Length: 81.01, Angle:0.71
+(285, 208)-->(286, 156): Length: 52.01, Angle:-88.90
+(286, 156)-->(367, 145): Length: 81.74, Angle:-7.73
+>
+--About Angles--
+<
+1 angle is right angle
+(367, 145)-->(366, 209): Length: 64.01, Angle:-89.10
+(366, 209)-->(285, 208): Length: 81.01, Angle:0.71
+>
+<
+1 angle is acute angle
+(367, 145)-->(366, 209): Length: 64.01, Angle:-89.10
+(286, 156)-->(367, 145): Length: 81.74, Angle:-7.73
+>
+<
+1 angle is right angle
+(366, 209)-->(285, 208): Length: 81.01, Angle:0.71
+(285, 208)-->(286, 156): Length: 52.01, Angle:-88.90
+>
+<
+1 angle is obtuse angle
+(285, 208)-->(286, 156): Length: 52.01, Angle:-88.90
+(286, 156)-->(367, 145): Length: 81.74, Angle:-7.73
+>
+<
+1 pairs of parallel lines
+(367, 145)-->(366, 209): Length: 64.01, Angle:-89.10
+(285, 208)-->(286, 156): Length: 52.01, Angle:-88.90
+>
+<
+1 angles are acute angle
+(367, 145)-->(366, 209): Length: 64.01, Angle:-89.10
+(286, 156)-->(367, 145): Length: 81.74, Angle:-7.73
+>
+<
+2 angles are right angle
+(367, 145)-->(366, 209): Length: 64.01, Angle:-89.10
+(366, 209)-->(285, 208): Length: 81.01, Angle:0.71
+(366, 209)-->(285, 208): Length: 81.01, Angle:0.71
+(285, 208)-->(286, 156): Length: 52.01, Angle:-88.90
+>
+}
+Contour #3
+{
+--About Lines-- 3 lines
+<
+2 lines are equal
+(270, 203)-->(201, 204): Length: 69.01, Angle:-0.83
+(201, 204)-->(200, 139): Length: 65.01, Angle:89.12
+>
+<
+3 closure lines
+(200, 139)-->(270, 203): Length: 94.85, Angle:42.44
+(270, 203)-->(201, 204): Length: 69.01, Angle:-0.83
+(201, 204)-->(200, 139): Length: 65.01, Angle:89.12
+>
+--About Angles--
+<
+1 angle is acute angle
+(200, 139)-->(270, 203): Length: 94.85, Angle:42.44
+(270, 203)-->(201, 204): Length: 69.01, Angle:-0.83
+>
+<
+1 angle is acute angle
+(200, 139)-->(270, 203): Length: 94.85, Angle:42.44
+(201, 204)-->(200, 139): Length: 65.01, Angle:89.12
+>
+<
+1 angle is right angle
+(270, 203)-->(201, 204): Length: 69.01, Angle:-0.83
+(201, 204)-->(200, 139): Length: 65.01, Angle:89.12
+>
+<
+2 angles are acute angle
+(200, 139)-->(270, 203): Length: 94.85, Angle:42.44
+(270, 203)-->(201, 204): Length: 69.01, Angle:-0.83
+(200, 139)-->(270, 203): Length: 94.85, Angle:42.44
+(201, 204)-->(200, 139): Length: 65.01, Angle:89.12
+>
+<
+1 angles are right angle
+(270, 203)-->(201, 204): Length: 69.01, Angle:-0.83
+(201, 204)-->(200, 139): Length: 65.01, Angle:89.12
+>
+}
+Contour #4
+{
+--About Lines-- 3 lines
+<
+2 lines are equal
+(129, 75)-->(345, 106): Length: 218.21, Angle:8.17
+(345, 106)-->(128, 136): Length: 219.06, Angle:-7.87
+>
+<
+3 closure lines
+(128, 136)-->(129, 75): Length: 61.01, Angle:-89.06
+(129, 75)-->(345, 106): Length: 218.21, Angle:8.17
+(345, 106)-->(128, 136): Length: 219.06, Angle:-7.87
+>
+--About Angles--
+<
+1 angle is acute angle
+(128, 136)-->(129, 75): Length: 61.01, Angle:-89.06
+(129, 75)-->(345, 106): Length: 218.21, Angle:8.17
+>
+<
+1 angle is acute angle
+(128, 136)-->(129, 75): Length: 61.01, Angle:-89.06
+(345, 106)-->(128, 136): Length: 219.06, Angle:-7.87
+>
+<
+1 angle is acute angle
+(129, 75)-->(345, 106): Length: 218.21, Angle:8.17
+(345, 106)-->(128, 136): Length: 219.06, Angle:-7.87
+>
+<
+3 angles are acute angle
+(128, 136)-->(129, 75): Length: 61.01, Angle:-89.06
+(129, 75)-->(345, 106): Length: 218.21, Angle:8.17
+(128, 136)-->(129, 75): Length: 61.01, Angle:-89.06
+(345, 106)-->(128, 136): Length: 219.06, Angle:-7.87
+(129, 75)-->(345, 106): Length: 218.21, Angle:8.17
+(345, 106)-->(128, 136): Length: 219.06, Angle:-7.87
+>
+}
+Contour #5
+{
+--About Lines-- 4 lines
+<
+2 lines are equal
+(114, 15)-->(375, 14): Length: 261.00, Angle:-0.22
+(376, 57)-->(115, 58): Length: 261.00, Angle:-0.22
+>
+<
+2 lines are equal
+(375, 14)-->(376, 57): Length: 43.01, Angle:88.67
+(115, 58)-->(114, 15): Length: 43.01, Angle:88.67
+>
+<
+4 closure lines
+(114, 15)-->(375, 14): Length: 261.00, Angle:-0.22
+(375, 14)-->(376, 57): Length: 43.01, Angle:88.67
+(376, 57)-->(115, 58): Length: 261.00, Angle:-0.22
+(115, 58)-->(114, 15): Length: 43.01, Angle:88.67
+>
+--About Angles--
+<
+1 angle is right angle
+(114, 15)-->(375, 14): Length: 261.00, Angle:-0.22
+(375, 14)-->(376, 57): Length: 43.01, Angle:88.67
+>
+<
+1 angle is right angle
+(114, 15)-->(375, 14): Length: 261.00, Angle:-0.22
+(115, 58)-->(114, 15): Length: 43.01, Angle:88.67
+>
+<
+1 angle is right angle
+(375, 14)-->(376, 57): Length: 43.01, Angle:88.67
+(376, 57)-->(115, 58): Length: 261.00, Angle:-0.22
+>
+<
+1 angle is right angle
+(376, 57)-->(115, 58): Length: 261.00, Angle:-0.22
+(115, 58)-->(114, 15): Length: 43.01, Angle:88.67
+>
+<
+2 pairs of parallel lines
+(114, 15)-->(375, 14): Length: 261.00, Angle:-0.22
+(376, 57)-->(115, 58): Length: 261.00, Angle:-0.22
+(375, 14)-->(376, 57): Length: 43.01, Angle:88.67
+(115, 58)-->(114, 15): Length: 43.01, Angle:88.67
+>
+<
+4 angles are right angle
+(114, 15)-->(375, 14): Length: 261.00, Angle:-0.22
+(375, 14)-->(376, 57): Length: 43.01, Angle:88.67
+(114, 15)-->(375, 14): Length: 261.00, Angle:-0.22
+(115, 58)-->(114, 15): Length: 43.01, Angle:88.67
+(375, 14)-->(376, 57): Length: 43.01, Angle:88.67
+(376, 57)-->(115, 58): Length: 261.00, Angle:-0.22
+(376, 57)-->(115, 58): Length: 261.00, Angle:-0.22
+(115, 58)-->(114, 15): Length: 43.01, Angle:88.67
+>
+}
+Contour #6
+{
+--About Lines-- 4 lines
+<
+2 lines are equal
+(38, 12)-->(92, 13): Length: 54.01, Angle:1.06
+(91, 185)-->(37, 184): Length: 54.01, Angle:1.06
+>
+<
+2 lines are equal
+(92, 13)-->(91, 185): Length: 172.00, Angle:-89.67
+(37, 184)-->(38, 12): Length: 172.00, Angle:-89.67
+>
+<
+4 closure lines
+(38, 12)-->(92, 13): Length: 54.01, Angle:1.06
+(92, 13)-->(91, 185): Length: 172.00, Angle:-89.67
+(91, 185)-->(37, 184): Length: 54.01, Angle:1.06
+(37, 184)-->(38, 12): Length: 172.00, Angle:-89.67
+>
+--About Angles--
+<
+1 angle is right angle
+(38, 12)-->(92, 13): Length: 54.01, Angle:1.06
+(92, 13)-->(91, 185): Length: 172.00, Angle:-89.67
+>
+<
+1 angle is right angle
+(38, 12)-->(92, 13): Length: 54.01, Angle:1.06
+(37, 184)-->(38, 12): Length: 172.00, Angle:-89.67
+>
+<
+1 angle is right angle
+(92, 13)-->(91, 185): Length: 172.00, Angle:-89.67
+(91, 185)-->(37, 184): Length: 54.01, Angle:1.06
+>
+<
+1 angle is right angle
+(91, 185)-->(37, 184): Length: 54.01, Angle:1.06
+(37, 184)-->(38, 12): Length: 172.00, Angle:-89.67
+>
+<
+2 pairs of parallel lines
+(38, 12)-->(92, 13): Length: 54.01, Angle:1.06
+(91, 185)-->(37, 184): Length: 54.01, Angle:1.06
+(92, 13)-->(91, 185): Length: 172.00, Angle:-89.67
+(37, 184)-->(38, 12): Length: 172.00, Angle:-89.67
+>
+<
+4 angles are right angle
+(38, 12)-->(92, 13): Length: 54.01, Angle:1.06
+(92, 13)-->(91, 185): Length: 172.00, Angle:-89.67
+(38, 12)-->(92, 13): Length: 54.01, Angle:1.06
+(37, 184)-->(38, 12): Length: 172.00, Angle:-89.67
+(92, 13)-->(91, 185): Length: 172.00, Angle:-89.67
+(91, 185)-->(37, 184): Length: 54.01, Angle:1.06
+(91, 185)-->(37, 184): Length: 54.01, Angle:1.06
+(37, 184)-->(38, 12): Length: 172.00, Angle:-89.67
+>
+}

@@ -1,0 +1,46 @@
+# point
+if      len(points) == 3 :
+        num_of_points = 3
+
+
+# line
+if      len(lines) == 3 :
+        num_of_lines = 3
+
+if      len(lines) == 4 :
+        num_of_lines = 4
+
+
+
+# triangle
+if      num_of_points = 3
+    and num_of_lines = 3
+    and sum(lines[:].length) > 2 * max(lines[:].length) :
+        figure = 'triangle'
+
+# based on length
+# 等腰三角形
+if      figure = 'triangle'
+    and line_equal_number
+THEN    figure is isosceles_triangle
+
+//等边三角形
+IF      figure is triangle
+    AND three_line_length is equal
+THEN    figure is equilateral_triangle
+
+@based on angle
+//钝角三角形
+IF      figure is triangle
+    AND one_angle_degree > 90
+THEN    figure is obtuse_triangle
+
+//直角三角形
+IF      figure is triangle
+    AND one_angle_degree = 90
+THEN    figure is right_triangle
+
+//锐角三角形
+IF      figure is triangle
+    AND three_angle_degree < 90
+
