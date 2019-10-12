@@ -1,0 +1,15 @@
+https://www.cnblogs.com/mingjiatang/p/4905395.html
+
+http://blog.csdn.net/hazir/article/details/41978731
+
+http://blog.csdn.net/haluoluo211/article/details/42679715
+
+http://blog.csdn.net/a753255157/article/details/49412387
+
+http://blog.csdn.net/tom555cat/article/details/18847595
+
+
+
+http://blog.csdn.net/haluoluo211/article/details/42679715
+
+毛老师网络班的同学，你们这学期的PJ和作业是我改。PJ需要在elearning上提交代码和报告，报告主要包含demo截图，关键组件和步骤的说明（比如协议结构设计，协议解析，聊天室的message是怎么样群发给所有连接上的client），还有可能遇到的问题和解决办法，以及以后改进的方案（不用实现，写个大概，比如文件下载如果断了怎么办，文件重名怎么办）。报告不管大家原先用什么写的，最后都转成pdf提交

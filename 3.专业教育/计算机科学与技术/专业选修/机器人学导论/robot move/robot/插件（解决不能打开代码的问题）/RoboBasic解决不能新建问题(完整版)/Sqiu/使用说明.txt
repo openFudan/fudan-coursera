@@ -1,0 +1,8 @@
+  请复制到C:\Windows\System32   替换其所有原文件
+EG：你的是32位的window7系统，就把它｛robobasic_32bit_OS_init(windows vista,7)｝复制到os（系统盘，大家所说的系统盘）:\
+    把｛robobasic_32bit_OS_init(windows vista,7)｝右键：以管理员身份运行：即可。
+
+    64位的系统原理同上
+
+本方法由本人从网上整理提供，联系QQ：869637893
+希望你能成功

@@ -1,0 +1,2 @@
+import server
+server.run()

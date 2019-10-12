@@ -1,0 +1,2 @@
+# crypto
+shared_secret = ''
