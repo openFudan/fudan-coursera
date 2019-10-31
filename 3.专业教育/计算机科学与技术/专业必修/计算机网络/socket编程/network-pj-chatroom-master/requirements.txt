@@ -1,2 +1,2 @@
-Pillow==6.2.0
-pycrypto==2.6.1
+This used Pillow(3.4.2) and pycrypto(2.6.1)
+They seems not safe, maybe you can look at other methods, attention please!
