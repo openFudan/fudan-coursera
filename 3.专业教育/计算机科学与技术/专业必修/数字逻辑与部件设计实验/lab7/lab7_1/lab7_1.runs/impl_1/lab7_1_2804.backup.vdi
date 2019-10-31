@@ -1,0 +1,72 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Sat Nov 26 21:20:49 2016
+# Process ID: 4616
+# Log file: C:/Users/Administrator/Desktop/study/shuluolab/lab7/lab7_1/lab7_1.runs/impl_1/lab7_1.vdi
+# Journal file: C:/Users/Administrator/Desktop/study/shuluolab/lab7/lab7_1/lab7_1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source lab7_1.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-479] Netlist was created with Vivado 2015.2
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Administrator/Desktop/study/shuluolab/lab7/lab7_1/lab7_1.srcs/constrs_1/new/lab7_1.xdc]
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/study/shuluolab/lab7/lab7_1/lab7_1.srcs/constrs_1/new/lab7_1.xdc]
+INFO: [Opt 31-140] Inserted 4 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+link_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 474.543 ; gain = 252.324
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-86] Your Implementation license expires in 26 day(s)
+INFO: [Common 17-1223] The version limit for your license is '2016.05' and will expire in -179 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.140 . Memory (MB): peak = 496.793 ; gain = 0.836
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Sat Nov 26 21:21:55 2016
+# Process ID: 2180
+# Log file: C:/Users/Administrator/Desktop/study/shuluolab/lab7/lab7_1/lab7_1.runs/impl_1/lab7_1.vdi
+# Journal file: C:/Users/Administrator/Desktop/study/shuluolab/lab7/lab7_1/lab7_1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source lab7_1.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-479] Netlist was created with Vivado 2015.2
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Administrator/Desktop/study/shuluolab/lab7/lab7_1/lab7_1.srcs/constrs_1/new/lab7_1.xdc]
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/study/shuluolab/lab7/lab7_1/lab7_1.srcs/constrs_1/new/lab7_1.xdc]
+INFO: [Opt 31-140] Inserted 4 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+link_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 474.191 ; gain = 252.621
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-86] Your Implementation license expires in 26 day(s)
+INFO: [Common 17-1223] The version limit for your license is '2016.05' and will expire in -179 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.125 . Memory (MB): peak = 496.383 ; gain = 1.762

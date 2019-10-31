@@ -1,0 +1,91 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date         : Mon Dec 05 11:35:09 2016
+| Host         : QH-20151017YOIZ running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file topp_control_sets_placed.rpt
+| Design       : topp
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    38 |
+| Minimum Number of register sites lost to control set restrictions |   259 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              25 |            7 |
+| No           | No                    | Yes                    |              24 |           24 |
+| No           | Yes                   | No                     |              12 |           12 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------+---------------+-------------------+------------------+----------------+
+|    Clock Signal    | Enable Signal |  Set/Reset Signal | Slice Load Count | Bel Load Count |
++--------------------+---------------+-------------------+------------------+----------------+
+|  clk1/out[0]       |               | lab4/q_reg[2]_P_1 |                1 |              1 |
+|  lab4/q_reg[3]_P_1 |               | lab4/q_reg[3]_C_0 |                1 |              1 |
+|  lab4/q_reg[3]_P_0 |               | lab4/q_reg[3]_C_1 |                1 |              1 |
+|  lab4/q_reg[3]_P   |               | lab4/q_reg[3]_C   |                1 |              1 |
+|  lab4/q_reg[2]_P_1 |               | lab4/q_reg[2]_C_0 |                1 |              1 |
+|  lab4/q_reg[2]_P_0 |               | lab4/q_reg[2]_C_1 |                1 |              1 |
+|  lab4/q_reg[2]_P   |               | lab4/q_reg[2]_C   |                1 |              1 |
+|  lab4/q_reg[1]_P_1 |               | lab4/q_reg[1]_C_0 |                1 |              1 |
+|  lab4/q_reg[1]_P   |               | lab4/q_reg[1]_C   |                1 |              1 |
+|  lab4/q_reg[1]_P_0 |               | lab4/q_reg[1]_C_1 |                1 |              1 |
+|  lab4/q_reg[0]_P_1 |               | lab4/q_reg[0]_C_0 |                1 |              1 |
+|  lab4/q_reg[0]_P_0 |               | lab4/q_reg[0]_C_1 |                1 |              1 |
+|  lab4/q_reg[0]_P   |               | lab4/q_reg[0]_C   |                1 |              1 |
+|  clk1/out[0]       |               | lab4/q_reg[3]_P_1 |                1 |              1 |
+|  clk1/out[0]       |               | lab4/q_reg[3]_P_0 |                1 |              1 |
+|  clk1/out[0]       |               | lab4/q_reg[3]_P   |                1 |              1 |
+|  clk1/out[0]       |               | lab4/q_reg[3]_C_1 |                1 |              1 |
+|  clk1/out[0]       |               | lab4/q_reg[3]_C_0 |                1 |              1 |
+|  clk1/out[0]       |               | lab4/q_reg[3]_C   |                1 |              1 |
+|  clk1/out[0]       |               | lab4/q_reg[2]_P_0 |                1 |              1 |
+|  clk1/out[0]       |               | lab4/q_reg[2]_P   |                1 |              1 |
+|  clk1/out[0]       |               | lab4/q_reg[2]_C_1 |                1 |              1 |
+|  clk1/out[0]       |               | lab4/q_reg[2]_C_0 |                1 |              1 |
+|  clk1/out[0]       |               | lab4/q_reg[2]_C   |                1 |              1 |
+|  clk1/out[0]       |               | lab4/q_reg[1]_P_1 |                1 |              1 |
+|  clk1/out[0]       |               | lab4/q_reg[1]_P   |                1 |              1 |
+|  clk1/out[0]       |               | lab4/q_reg[1]_C_1 |                1 |              1 |
+|  clk1/out[0]       |               | lab4/q_reg[1]_P_0 |                1 |              1 |
+|  clk1/out[0]       |               | lab4/q_reg[1]_C_0 |                1 |              1 |
+|  clk1/out[0]       |               | lab4/q_reg[1]_C   |                1 |              1 |
+|  clk1/out[0]       |               | lab4/q_reg[0]_P_1 |                1 |              1 |
+|  clk1/out[0]       |               | lab4/q_reg[0]_P_0 |                1 |              1 |
+|  clk1/out[0]       |               | lab4/q_reg[0]_P   |                1 |              1 |
+|  clk1/out[0]       |               | lab4/q_reg[0]_C_1 |                1 |              1 |
+|  clk1/out[0]       |               | lab4/q_reg[0]_C_0 |                1 |              1 |
+|  clk1/out[0]       |               | lab4/q_reg[0]_C   |                1 |              1 |
+|  clk1/out[0]       | s_IBUF[0]     |                   |                1 |              4 |
+|  clk_IBUF_BUFG     |               |                   |                7 |             25 |
++--------------------+---------------+-------------------+------------------+----------------+
+
+

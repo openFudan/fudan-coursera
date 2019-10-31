@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Mon Nov 07 09:40:50 2016
+# Process ID: 4508
+# Log file: C:/Users/Administrator/Desktop/study/shuluolab/lab3/lab3_2/lab3_2.runs/synth_1/lab3_2_2.vds
+# Journal file: C:/Users/Administrator/Desktop/study/shuluolab/lab3/lab3_2/lab3_2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source lab3_2_2.tcl -notrace

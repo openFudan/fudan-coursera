@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Webtalk v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Fri Aug 05 15:02:12 2016
+# Process ID: 6948
+# Log file: F:/xup/lab1/lab1.sim/sim_1/synth/timing/webtalk.log
+# Journal file: F:/xup/lab1/lab1.sim/sim_1/synth/timing\webtalk.jou
+#-----------------------------------------------------------
+source F:/xup/lab1/lab1.sim/sim_1/synth/timing/xsim.dir/lab1_tb_time_synth/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 60.848 ; gain = 0.020
+
+    while executing
+"webtalk_transmit -clientid 2103005455 -regid "210766071_0_0_148" -xml F:/xup/lab1/lab1.sim/sim_1/synth/timing/xsim.dir/lab1_tb_time_synth/webtalk/usag..."
+    (file "F:/xup/lab1/lab1.sim/sim_1/synth/timing/xsim.dir/lab1_tb_time_synth/webtalk/xsim_webtalk.tcl" line 41)
+INFO: [Common 17-206] Exiting Webtalk at Fri Aug 05 15:02:17 2016...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Thu Oct 27 11:20:09 2016
+# Process ID: 3296
+# Log file: C:/Users/Administrator/Desktop/study/数逻实验/xup/xup/lab1/lab1.sim/sim_1/behav/webtalk.log
+# Journal file: C:/Users/Administrator/Desktop/study/数逻实验/xup/xup/lab1/lab1.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/Administrator/Desktop/study/数逻实验/xup/xup/lab1/lab1.sim/sim_1/behav/xsim.dir/lab1_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Administrator/Desktop/study/数逻实验/xup/xup/lab1/lab1.sim/sim_1/behav/xsim.dir/lab1_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Oct 27 11:20:13 2016. For additional details about this file, please refer to the WebTalk help file at D:/Vivado/2015.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Oct 27 11:20:13 2016...

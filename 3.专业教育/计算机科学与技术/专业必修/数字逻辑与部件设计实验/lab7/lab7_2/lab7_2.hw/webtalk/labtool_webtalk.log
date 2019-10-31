@@ -1,0 +1,13 @@
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Administrator/Desktop/study/shuluolab/lab7/lab7_2/lab7_2.hw/webtalk/labtool_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 96.699 ; gain = 0.020
+
+    while executing
+"webtalk_transmit -clientid 648327076 -regid "" -xml C:/Users/Administrator/Desktop/study/shuluolab/lab7/lab7_2/lab7_2.hw/webtalk/usage_statistics_ext_..."
+    (file "C:/Users/Administrator/Desktop/study/shuluolab/lab7/lab7_2/lab7_2.hw/webtalk/labtool_webtalk.tcl" line 26)
+INFO: [Common 17-206] Exiting Webtalk at Sun Dec 11 20:49:27 2016...

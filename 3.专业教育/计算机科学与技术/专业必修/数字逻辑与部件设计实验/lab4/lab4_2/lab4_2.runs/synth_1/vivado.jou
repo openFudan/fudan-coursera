@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Mon Dec 05 11:33:14 2016
+# Process ID: 5208
+# Log file: C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.runs/synth_1/topp.vds
+# Journal file: C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source topp.tcl -notrace

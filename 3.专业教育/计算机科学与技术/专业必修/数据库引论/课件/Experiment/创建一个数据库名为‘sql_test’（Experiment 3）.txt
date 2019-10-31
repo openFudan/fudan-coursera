@@ -1,0 +1,195 @@
+create database sql_test
+go 
+--打开数据库 sql_test
+use sql_test
+go
+
+--建立学生表
+create table 学生
+(学生编号 char(4) primary key, 学生名字 varchar(50)not null)
+go
+
+--修改学生表
+alter table 学生 
+add 班级编号 char(4) null --添加班级编号字段
+-- （注意如果添加的字段不为空的话，是不能被添加的）
+go
+
+--建立班级表
+create table 班级
+(班级编号 char(4) primary key ,班级名称 varchar(50)not null)
+go
+
+--建立课程表
+create table 课程
+(课程编号 char(4) primary key ,课程名称 varchar(50) not null,开课日期 datetime )
+go
+
+--修改课程表
+alter table 课程
+add 课程代号 varchar(10) null --添加课程代号字段
+go
+
+alter table 课程
+drop column 开课日期  --删除开课日期字段
+go
+
+alter table 课程
+alter column  课程名称 varchar(20) not null   --修改课程名称字段
+go
+
+--建立一个product_test_one 表，与下个表类似，只不过在constraint前面有个‘逗号’不影响执行
+create table product_test_one
+(
+id char(10) not null, name varchar(20) null, price money default 20.5,quantity smallint null, constraint pk_id primary key clustered (id)
+ )
+go
+
+
+--建立一个product_test_two 表
+
+create table product_test_two
+(
+id char(10) not null, name varchar(20) null, price money default 20.5,quantity smallint null constraint pk_id2 primary key clustered (id)
+ )
+go
+
+--删除表 pruduct_test_one表
+drop table product_test_one
+go
+
+--建立一个student表，使其中的 name 字段具有唯一性
+create table student 
+(
+id char(8), name char(10) --表字段
+constraint pk_id primary key (id), --添加一个主键约束 
+constraint uk_name unique (name) --添加一个唯一性约束
+)
+go
+
+--建立一个student4表，同上 （注意：constraint 与constraint 之间一定要有逗号，否则出错！）
+create table student4 
+(
+id char(8), name char(10) --表字段
+constraint pk_id4 primary key (id), constraint uk_name4 unique (name)
+)
+go
+-- 删除表student4
+drop table student4
+go
+
+--建立一个student3表，同上
+create table student3
+(
+id char(8), name char(10), --表字段
+constraint pk_id3 primary key (id) ,constraint uk_name3 unique (name)
+)
+go
+
+--删除表student3
+drop table student3
+go
+
+
+--constraint 约束名 check(逻辑条件表达式)
+
+--创建一个‘员工‘表，使其输入的性别字段(sex)只能接受‘m’或则‘f’，而不能接受其他数据
+--并且为phone字段创建检查约束，限制只能输入类似0108564712之类的数据，而不能随意输入其他数据
+create table 员工
+(
+id char(5),name char(20),sex char(2),phone int
+constraint pk_zid primary key (id),      --此间一定要有‘逗号’分隔 ，定义主键约束
+constraint chk_sex check (sex in (‘f‘,‘m‘) ),
+constraint chk_phone check (phone like ‘(010) [0-9] [0-9] [0-9] [0-9] [0-9] [0-9] [0-9]‘)
+)
+go
+
+
+--constraint 约束名 default 约束表达式 [for 字段名]
+
+-- 创建一个表‘默认约束’，为字段sex创建默认约束
+create table 默认约束
+(
+id char(5) primary key ,sex varchar(2) constraint con_sex default ‘m‘ 
+)
+go
+
+--修改‘默认约束’表
+alter table 默认约束
+add name varchar(10)null constraint con_name default ‘你好宝贝‘ --增加一个字段为‘name’，默认值为‘你好宝贝’
+go
+
+--往班级表里添加8条记录
+insert into 班级 values(‘bj01‘,‘一班‘)
+insert into 班级 values(‘bj02‘,‘二班‘)
+insert into 班级 values(‘bj03‘,‘三班‘)
+insert into 班级 values(‘bj04‘,‘四班‘)
+insert into 班级 values(‘bj05‘,‘五班‘)
+insert into 班级 values(‘bj06‘,‘六班‘)
+insert into 班级 values(‘bj07‘,‘七班‘)
+insert into 班级 values(‘bj08‘,‘八班‘)
+go
+--显示班级所以记录
+select * from 班级
+go
+--删除班级表里班级编号大于bj06的记录
+delete from 班级 where 班级编号>‘bj06‘
+go
+--显示班级所以记录
+select * from 班级
+go
+
+--向学生表里添加记录
+insert into 学生 values(‘xs01‘,‘one‘,‘bj01‘)
+insert into 学生 values(‘xs02‘,‘two‘,‘bj01‘)
+insert into 学生 values(‘xs03‘,‘three‘,‘bj01‘)
+insert into 学生 values(‘xs04‘,‘four‘,‘bj02‘)
+insert into 学生 values(‘xs05‘,‘five‘,‘bj03‘)
+insert into 学生 values(‘xs06‘,‘six‘,‘bj02‘)
+insert into 学生 values(‘xs07‘,‘seven‘,‘bj04‘)
+insert into 学生 values(‘xs08‘,‘eight‘,‘bj03‘)
+insert into 学生 values(‘xs09‘,‘nine‘,‘bj04‘)
+insert into 学生 values(‘xs10‘,‘ten‘,‘bj05‘)
+insert into 学生 values(‘xs11‘,‘eleven‘,‘bj06‘)
+insert into 学生 values(‘xs12‘,‘twleve‘,‘bj06‘)
+go
+--显示学生所有的记录
+select * from 学生
+go
+
+--连接查询
+select * from 学生,班级 where 学生.班级编号=班级.班级编号
+go
+
+--以下效果同上一条相同
+
+--选择的连接查询
+select 学生.学生编号,班级.班级编号, 学生.学生名字,班级.班级名称 from 学生,班级 where 学生.班级编号=班级.班级编号
+go
+--以下效果同上一条相同
+
+
+
+--查询一班的学生
+select* from 学生 where 班级编号 in(select 班级编号 from 班级 where 班级编号=‘bj01‘)
+go
+--与上面一条查询语句一样功能
+select a.学生编号,a.学生名字,a.班级编号 from 学生 as a ,班级 as b where a.班级编号=b.班级编号 and b.班级编号=‘bj01‘
+go
+
+--统计一班学生人数
+select count(学生编号)as 学生统计 from 学生 
+where 班级编号 in(select 班级编号 from 班级 where 班级编号=‘bj01‘)
+go
+
+--group的用法和count（）函数的用法
+
+
+--统计一班学生人数，并显示学生的名字和所在班级
+select count(学生编号)as 学生统计, 学生名字,班级编号 from 学生 
+where 班级编号 in(select 班级编号 from 班级 where 班级编号=‘bj01‘)
+group by 班级编号,学生名字
+go
+
+
+3/12378 13 16 18

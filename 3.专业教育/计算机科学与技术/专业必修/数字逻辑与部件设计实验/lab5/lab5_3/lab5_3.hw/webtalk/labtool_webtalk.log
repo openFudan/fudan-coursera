@@ -1,0 +1,9 @@
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.hw/webtalk/usage_statistics_ext_labtool.xml' has been successfully sent to Xilinx on Mon Nov 14 10:40:38 2016. For additional details about this file, please refer to the WebTalk help file at D:/Vivado/2015.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Nov 14 10:40:38 2016...

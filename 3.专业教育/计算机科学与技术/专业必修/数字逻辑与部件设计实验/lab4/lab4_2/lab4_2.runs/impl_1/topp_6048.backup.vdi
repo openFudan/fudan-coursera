@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Mon Dec 05 11:43:00 2016
+# Process ID: 5336
+# Log file: C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.runs/impl_1/topp.vdi
+# Journal file: C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source topp.tcl -notrace
+Command: open_checkpoint topp_routed.dcp
+INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.2
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization

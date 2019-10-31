@@ -1,0 +1,2 @@
+Database System Concepts Sixth Edition
+https://www.db-book.com/db6/

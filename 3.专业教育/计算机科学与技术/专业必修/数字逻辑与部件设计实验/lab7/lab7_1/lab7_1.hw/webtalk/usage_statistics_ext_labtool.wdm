@@ -1,0 +1,38 @@
+version = "1.0";
+clients =
+(
+    { client_name = "project"; 
+        rules = ( 
+            { 
+                context="software_version_and_target_device";
+                xml_map="software_version_and_target_device";
+                html_map="software_version_and_target_device";
+                html_format="UserEnvStyle";
+            },
+            { 
+                context="user_environment";
+                xml_map="user_environment";
+                html_map="user_environment";
+                html_format="UserEnvStyle";
+            }
+        );
+        },
+
+    { client_name = "labtool"; 
+        rules = ( 
+            { 
+                context="labtool\\command_line_options";
+                xml_map="labtool\\command_line_options";
+                html_map="labtool\\command_line_options";
+                html_format="UnisimStatsStyle";
+            },
+            { 
+                context="labtool\\usage";
+                xml_map="labtool\\usage";
+                html_map="labtool\\usage";
+                html_format="UnisimStatsStyle";
+            }
+        );
+        }
+);
+

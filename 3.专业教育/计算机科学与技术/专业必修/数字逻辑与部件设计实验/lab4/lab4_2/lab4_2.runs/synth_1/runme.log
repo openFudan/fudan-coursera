@@ -1,0 +1,1082 @@
+
+*** Running vivado
+    with args -log topp.vds -m64 -mode batch -messageDb vivado.pb -notrace -source topp.tcl
+
+
+****** Vivado v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source topp.tcl -notrace
+Command: synth_design -top topp -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-86] Your Synthesis license expires in 17 day(s)
+INFO: [Common 17-1223] The version limit for your license is '2016.05' and will expire in -188 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 265.004 ; gain = 52.695
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'topp' [C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/sources_1/new/lab4_2.v:84]
+INFO: [Synth 8-638] synthesizing module 'clkdiv' [C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/sources_1/new/lab4_2.v:22]
+INFO: [Synth 8-256] done synthesizing module 'clkdiv' (1#1) [C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/sources_1/new/lab4_2.v:22]
+INFO: [Synth 8-638] synthesizing module 'ls377' [C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/sources_1/new/lab4_2.v:56]
+INFO: [Synth 8-256] done synthesizing module 'ls377' (2#1) [C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/sources_1/new/lab4_2.v:56]
+INFO: [Synth 8-638] synthesizing module 'ram2' [C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/sources_1/new/lab4_2.v:42]
+INFO: [Synth 8-256] done synthesizing module 'ram2' (3#1) [C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/sources_1/new/lab4_2.v:42]
+INFO: [Synth 8-638] synthesizing module 'u521' [C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/sources_1/new/lab4_2.v:64]
+INFO: [Synth 8-256] done synthesizing module 'u521' (4#1) [C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/sources_1/new/lab4_2.v:64]
+INFO: [Synth 8-638] synthesizing module 'u621' [C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/sources_1/new/lab4_2.v:73]
+INFO: [Synth 8-256] done synthesizing module 'u621' (5#1) [C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/sources_1/new/lab4_2.v:73]
+INFO: [Synth 8-256] done synthesizing module 'topp' (6#1) [C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/sources_1/new/lab4_2.v:84]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 299.320 ; gain = 87.012
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 299.320 ; gain = 87.012
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc]
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 606.469 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 606.469 ; gain = 394.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 606.469 ; gain = 394.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 3 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 3 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 9 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 9 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 10 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 10 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 11 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 11 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 12 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 12 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 13 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 13 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 14 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 14 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 15 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 15 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 16 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 16 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 17 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 17 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 18 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 18 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 19 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 19 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 20 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 20 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 21 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 21 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 22 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 22 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 23 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 23 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 29 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 29 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 30 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 30 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 31 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 31 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 32 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 32 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 33 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 33 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 34 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 34 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 35 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 35 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 36 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 36 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 37 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 37 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 38 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 38 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 39 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 39 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 40 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 40 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 41 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 41 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 42 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 42 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 43 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 43 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 44 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 44 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 606.469 ; gain = 394.160
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'q_reg' [C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/sources_1/new/lab4_2.v:77]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 606.469 ; gain = 394.160
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ls377 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+Module u521 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module u621 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 606.469 ; gain = 394.160
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 606.469 ; gain = 394.160
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 606.469 ; gain = 394.160
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: 
++------------+--------------+-----------+----------------------+----------------+-------------------+
+|Module Name | RTL Object   | Inference | Size (Depth x Width) | Primitives     | Hierarchical Name | 
++------------+--------------+-----------+----------------------+----------------+-------------------+
+|topp        | lab4/ram_reg | Implied   | 16 x 4               | RAM16X1S x 4   | topp/ram__2       | 
++------------+--------------+-----------+----------------------+----------------+-------------------+
+
+Note: The table shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once. "Hierarchical Name" reflects the Distributed RAM name as it appears in the hierarchical module and only part of it is displayed.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (\clk1/q_reg[25] ) is unused and will be removed from module topp.
+WARNING: [Synth 8-3332] Sequential element (\clk1/q_reg[26] ) is unused and will be removed from module topp.
+WARNING: [Synth 8-3332] Sequential element (\clk1/q_reg[27] ) is unused and will be removed from module topp.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 606.469 ; gain = 394.160
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 606.469 ; gain = 394.160
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 606.469 ; gain = 394.160
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 3 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 3 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 9 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 9 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 10 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 10 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 11 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 11 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 12 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 12 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 13 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 13 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 14 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 14 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 15 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 15 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 16 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 16 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 17 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 17 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 18 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 18 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 19 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 19 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 20 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 20 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 21 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 21 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 22 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 22 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 23 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 23 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 29 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 29 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 30 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 30 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 31 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 31 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 32 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 32 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 33 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 33 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 34 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 34 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 35 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 35 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 36 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 36 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 37 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 37 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 38 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 38 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 39 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 39 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 40 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 40 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 41 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 41 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 42 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 42 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 43 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 43 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 44 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+incorrect set of required parameters for "set_property" at line 44 of file C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.srcs/constrs_1/new/lab4_2.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 606.469 ; gain = 394.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 606.469 ; gain = 394.160
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (\lab6/q_reg[3] ) is unused and will be removed from module topp.
+WARNING: [Synth 8-3332] Sequential element (\lab6/q_reg[2] ) is unused and will be removed from module topp.
+WARNING: [Synth 8-3332] Sequential element (\lab6/q_reg[1] ) is unused and will be removed from module topp.
+WARNING: [Synth 8-3332] Sequential element (\lab6/q_reg[0] ) is unused and will be removed from module topp.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 606.469 ; gain = 394.160
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 606.469 ; gain = 394.160
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 606.469 ; gain = 394.160
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 606.469 ; gain = 394.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 606.469 ; gain = 394.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 606.469 ; gain = 394.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |     7|
+|3     |LUT1     |    25|
+|4     |LUT2     |    16|
+|5     |LUT3     |    12|
+|6     |LUT4     |     8|
+|7     |LUT6     |     4|
+|8     |RAM16X1S |     4|
+|9     |FDCE     |    12|
+|10    |FDPE     |    12|
+|11    |FDRE     |    25|
+|12    |LDC      |    12|
+|13    |IBUF     |    16|
+|14    |OBUF     |    16|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------+--------+------+
+|      |Instance |Module  |Cells |
++------+---------+--------+------+
+|1     |top      |        |   170|
+|2     |  clk1   |clkdiv  |    57|
+|3     |  lab1   |ls377   |    16|
+|4     |  lab2   |ls377_0 |    16|
+|5     |  lab3   |ls377_1 |    16|
+|6     |  lab4   |ram2    |    28|
+|7     |  lab6   |u621    |     4|
++------+---------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:45 . Memory (MB): peak = 606.469 ; gain = 394.160
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 606.469 ; gain = 65.309
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 606.469 ; gain = 394.160
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 39 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  LDC => LDCE: 12 instances
+  RAM16X1S => RAM32X1S (RAMS32): 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 606.469 ; gain = 384.863
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.064 . Memory (MB): peak = 606.469 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 05 11:34:02 2016...

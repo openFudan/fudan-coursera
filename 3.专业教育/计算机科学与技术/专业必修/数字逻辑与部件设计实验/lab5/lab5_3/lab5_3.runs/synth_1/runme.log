@@ -1,0 +1,598 @@
+
+*** Running vivado
+    with args -log lab5_3.vds -m64 -mode batch -messageDb vivado.pb -notrace -source lab5_3.tcl
+
+
+****** Vivado v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source lab5_3.tcl -notrace
+Command: synth_design -top lab5_3 -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-1223] The version limit for your license is '2016.05' and will expire in -167 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 264.582 ; gain = 52.844
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'lab5_3' [C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/sources_1/new/lab5_3.v:53]
+INFO: [Synth 8-638] synthesizing module 'DFF' [C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/sources_1/new/lab5_3.v:36]
+INFO: [Synth 8-638] synthesizing module 'clkdiv' [C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/sources_1/new/lab5_3.v:21]
+INFO: [Synth 8-256] done synthesizing module 'clkdiv' (1#1) [C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/sources_1/new/lab5_3.v:21]
+INFO: [Synth 8-256] done synthesizing module 'DFF' (2#1) [C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/sources_1/new/lab5_3.v:36]
+INFO: [Synth 8-256] done synthesizing module 'lab5_3' (3#1) [C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/sources_1/new/lab5_3.v:53]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 298.797 ; gain = 87.059
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 298.797 ; gain = 87.059
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc]
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 605.008 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 605.008 ; gain = 393.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 605.008 ; gain = 393.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 3 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+incorrect set of required parameters for "set_property" at line 3 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 9 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+incorrect set of required parameters for "set_property" at line 9 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 10 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+incorrect set of required parameters for "set_property" at line 10 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 11 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+incorrect set of required parameters for "set_property" at line 11 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 12 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+incorrect set of required parameters for "set_property" at line 12 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 13 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+incorrect set of required parameters for "set_property" at line 13 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 19 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+incorrect set of required parameters for "set_property" at line 19 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 20 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+incorrect set of required parameters for "set_property" at line 20 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 21 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+incorrect set of required parameters for "set_property" at line 21 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 22 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+incorrect set of required parameters for "set_property" at line 22 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 23 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+incorrect set of required parameters for "set_property" at line 23 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 24 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+incorrect set of required parameters for "set_property" at line 24 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 25 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+incorrect set of required parameters for "set_property" at line 25 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 26 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+incorrect set of required parameters for "set_property" at line 26 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 605.008 ; gain = 393.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 605.008 ; gain = 393.270
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module DFF 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 605.008 ; gain = 393.270
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 605.008 ; gain = 393.270
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 605.008 ; gain = 393.270
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+WARNING: [Synth 8-3332] Sequential element (\DFF1/clk1/q_reg[27] ) is unused and will be removed from module lab5_3.
+WARNING: [Synth 8-3332] Sequential element (\DFF1/clk1/q_reg[28] ) is unused and will be removed from module lab5_3.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 605.008 ; gain = 393.270
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 605.008 ; gain = 393.270
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 605.008 ; gain = 393.270
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 3 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+incorrect set of required parameters for "set_property" at line 3 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 9 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+incorrect set of required parameters for "set_property" at line 9 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 10 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+incorrect set of required parameters for "set_property" at line 10 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 11 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+incorrect set of required parameters for "set_property" at line 11 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 12 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+incorrect set of required parameters for "set_property" at line 12 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 13 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+incorrect set of required parameters for "set_property" at line 13 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 19 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+incorrect set of required parameters for "set_property" at line 19 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 20 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+incorrect set of required parameters for "set_property" at line 20 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 21 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+incorrect set of required parameters for "set_property" at line 21 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 22 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+incorrect set of required parameters for "set_property" at line 22 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 23 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+incorrect set of required parameters for "set_property" at line 23 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 24 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+incorrect set of required parameters for "set_property" at line 24 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 25 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+incorrect set of required parameters for "set_property" at line 25 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 26 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+incorrect set of required parameters for "set_property" at line 26 of file C:/Users/Administrator/Desktop/study/shuluolab/lab5/lab5_3/lab5_3.srcs/constrs_1/new/lab5_3.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 605.008 ; gain = 393.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 605.008 ; gain = 393.270
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 605.008 ; gain = 393.270
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 605.008 ; gain = 393.270
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 605.008 ; gain = 393.270
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 605.008 ; gain = 393.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 605.008 ; gain = 393.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 605.008 ; gain = 393.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     7|
+|3     |LUT1   |    32|
+|4     |FDCE   |     4|
+|5     |FDRE   |    27|
+|6     |IBUF   |     6|
+|7     |OBUF   |     8|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    85|
+|2     |  DFF1   |DFF    |    63|
+|3     |    clk1 |clkdiv |    61|
+|4     |  DFF2   |DFF_0  |     3|
+|5     |  DFF3   |DFF_1  |     2|
+|6     |  DFF4   |DFF_2  |     2|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 605.008 ; gain = 393.270
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 605.008 ; gain = 65.352
+Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 605.008 ; gain = 393.270
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+18 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 605.008 ; gain = 383.848
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 605.008 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 14 10:35:43 2016...

@@ -1,0 +1,87 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Mon Dec 05 11:43:00 2016
+# Process ID: 5336
+# Log file: C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.runs/impl_1/topp.vdi
+# Journal file: C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source topp.tcl -notrace
+Command: open_checkpoint topp_routed.dcp
+INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.2
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Mon Dec 05 11:43:31 2016
+# Process ID: 6048
+# Log file: C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.runs/impl_1/topp.vdi
+# Journal file: C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source topp.tcl -notrace
+Command: open_checkpoint topp_routed.dcp
+INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.2
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.runs/impl_1/.Xil/Vivado-6048-QH-20151017YOIZ/dcp/topp.xdc]
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/study/shuluolab/lab4/lab4_2/lab4_2.runs/impl_1/.Xil/Vivado-6048-QH-20151017YOIZ/dcp/topp.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 465.527 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 465.527 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 4 instances
+
+INFO: [Project 1-484] Checkpoint was created with build 1266856
+open_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 465.527 ; gain = 243.680
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-86] Your Implementation license expires in 17 day(s)
+INFO: [Common 17-1223] The version limit for your license is '2016.05' and will expire in -188 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC 23-20] Rule violation (CFGBVS-1) Missing CFGBVS and CONFIG_VOLTAGE Design Properties - Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net lab4/q_reg[0]_P is a gated clock net sourced by a combinational pin lab4/q_reg[0]_LDC_i_1/O, cell lab4/q_reg[0]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net lab4/q_reg[0]_P_0 is a gated clock net sourced by a combinational pin lab4/q_reg[0]_LDC_i_1__0/O, cell lab4/q_reg[0]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net lab4/q_reg[0]_P_1 is a gated clock net sourced by a combinational pin lab4/q_reg[0]_LDC_i_1__1/O, cell lab4/q_reg[0]_LDC_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net lab4/q_reg[1]_P is a gated clock net sourced by a combinational pin lab4/q_reg[1]_LDC_i_1/O, cell lab4/q_reg[1]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net lab4/q_reg[1]_P_0 is a gated clock net sourced by a combinational pin lab4/q_reg[1]_LDC_i_1__0/O, cell lab4/q_reg[1]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net lab4/q_reg[1]_P_1 is a gated clock net sourced by a combinational pin lab4/q_reg[1]_LDC_i_1__1/O, cell lab4/q_reg[1]_LDC_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net lab4/q_reg[2]_P is a gated clock net sourced by a combinational pin lab4/q_reg[2]_LDC_i_1/O, cell lab4/q_reg[2]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net lab4/q_reg[2]_P_0 is a gated clock net sourced by a combinational pin lab4/q_reg[2]_LDC_i_1__0/O, cell lab4/q_reg[2]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net lab4/q_reg[2]_P_1 is a gated clock net sourced by a combinational pin lab4/q_reg[2]_LDC_i_1__1/O, cell lab4/q_reg[2]_LDC_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net lab4/q_reg[3]_P is a gated clock net sourced by a combinational pin lab4/q_reg[3]_LDC_i_1/O, cell lab4/q_reg[3]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net lab4/q_reg[3]_P_0 is a gated clock net sourced by a combinational pin lab4/q_reg[3]_LDC_i_1__0/O, cell lab4/q_reg[3]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC 23-20] Rule violation (PDRC-153) Gated clock check - Net lab4/q_reg[3]_P_1 is a gated clock net sourced by a combinational pin lab4/q_reg[3]_LDC_i_1__1/O, cell lab4/q_reg[3]_LDC_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 13 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./topp.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+write_bitstream: Time (s): cpu = 00:00:52 ; elapsed = 00:00:52 . Memory (MB): peak = 811.246 ; gain = 345.719
+INFO: [Vivado_Tcl 4-395] Unable to parse hwdef file topp.hwdef
+INFO: [Common 17-206] Exiting Vivado at Mon Dec 05 11:44:37 2016...

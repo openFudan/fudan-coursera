@@ -1,0 +1,9 @@
+REM
+REM Vivado(TM)
+REM htr.txt: a Vivado-generated description of how-to-repeat the
+REM          the basic steps of a run.  Note that runme.bat/sh needs
+REM          to be invoked for Vivado to track run status.
+REM Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+REM
+
+vivado -log lab1.vds -m64 -mode batch -messageDb vivado.pb -notrace -source lab1.tcl

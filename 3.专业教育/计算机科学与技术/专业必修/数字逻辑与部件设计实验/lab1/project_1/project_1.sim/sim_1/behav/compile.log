@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/study/shuluolab/lab1/project_1/project_1.srcs/sources_1/new/lab1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administrator/Desktop/study/shuluolab/lab1/project_1/project_1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

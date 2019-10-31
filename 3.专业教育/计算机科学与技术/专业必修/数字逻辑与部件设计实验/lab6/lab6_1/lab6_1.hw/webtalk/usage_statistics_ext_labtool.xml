@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<webTalkData  fileName='usage_statistics_ext_labtool.xml'  majorVersion='1' minorVersion='0' timeStamp='Sun Nov 20 14:17:29 2016'>
+<section name="__ROOT__" level="0" order="1" description="">
+ <section name="software_version_and_target_device" level="1" order="1" description="">
+  <keyValuePair key="beta" value="FALSE" description="" />
+  <keyValuePair key="build_version" value="1266856" description="" />
+  <keyValuePair key="date_generated" value="Sun Nov 20 14:17:27 2016" description="" />
+  <keyValuePair key="os_platform" value="WIN64" description="" />
+  <keyValuePair key="product_version" value="Vivado v2015.2 (64-bit)" description="" />
+  <keyValuePair key="project_id" value="a6f03cd6-f9b0-49ff-a6ec-dace9a689da9" description="" />
+  <keyValuePair key="project_iteration" value="2" description="" />
+  <keyValuePair key="random_id" value="b5ed4adc-a453-42e8-99a4-2a98b965966f" description="" />
+  <keyValuePair key="registration_id" value="" description="" />
+  <keyValuePair key="route_design" value="FALSE" description="" />
+  <keyValuePair key="target_device" value="not_applicable" description="" />
+  <keyValuePair key="target_family" value="not_applicable" description="" />
+  <keyValuePair key="target_package" value="not_applicable" description="" />
+  <keyValuePair key="target_speed" value="not_applicable" description="" />
+  <keyValuePair key="tool_flow" value="labtool" description="" />
+ </section>
+ <section name="user_environment" level="1" order="2" description="">
+  <keyValuePair key="cpu_name" value="Intel(R) Core(TM) i3-4005U CPU @ 1.70GHz" description="" />
+  <keyValuePair key="cpu_speed" value="1696 MHz" description="" />
+  <keyValuePair key="os_name" value="Microsoft Windows 7 , 64-bit" description="" />
+  <keyValuePair key="os_release" value="Service Pack 1  (build 7601)" description="" />
+  <keyValuePair key="system_ram" value="4.000 GB" description="" />
+  <keyValuePair key="total_processors" value="1" description="" />
+ </section>
+ <section name="labtool" level="1" order="3" description="">
+  <section name="usage" level="2" order="1" description="">
+   <keyValuePair key="pgmcnt" value="00:00:00" description="" />
+  </section>
+ </section>
+ <section name="vivado_usage" level="1" order="4" description="">
+ </section>
+</section>
+</webTalkData>

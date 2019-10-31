@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/xup/lab1/lab1.sim/sim_1/synth/timing/lab1_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab1
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/xup/lab1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab1_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/xup/lab1/lab1.sim/sim_1/synth/timing/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-1195] overwriting previous definition of module glbl [F:/xup/lab1/lab1.sim/sim_1/synth/timing/glbl.v:6]
