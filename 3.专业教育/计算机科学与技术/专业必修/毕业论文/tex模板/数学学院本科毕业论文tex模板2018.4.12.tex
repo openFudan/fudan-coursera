@@ -1,0 +1,326 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5%%%%%%%%%%%%%%%
+%  本文档可在安装了CTEX宏包, CTEX字体下的TEX系统运行,
+%  访问http://www.ctex.org, 可以获得最新的宏包与字体安装包
+%
+%  请使用PDFLATEX对模板编译2次, 可得正确结果, 由于hyperref的设置中不支持DVI-PDF,
+%  用LATEX编译时需要替换相应的命令, 详见相应注释.
+%
+% 文档是在原来李湛、何力同学的模板的基础上修改的, 主要包括以下几个地方：
+%
+%1.修正了原模板使用hyperref宏包中的设置, 使文档更加美观, 对设置作出了说明, 可以进一步修改
+%2.修正了定理的样式, 原定理标题是黑体加粗, 现改为黑体, 原定理正文为倾斜楷体, 现改为楷体, 符合一般论文的格式
+%3.对导言区的少部分命令修改, 删去了一些默认的重复的设置
+%4.对模板的少部分正文进行充实
+%5.对部分原来模板中的注释进行了修改, 删去了不必要的, 加入了一些中文的注释, 方便查阅
+%
+%  by 张越 Apr.12, 有问题请发送你的问题到：frank_melody@hotmail.com
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% documentclass can be ctexart, ctexrep, ctexbook, 推荐使用模板中的CTEXREP
+% cs4size - 默认的字体大� ∷�% punct - 对中文标点的位置（宽度）进行调整
+% twoside - if you want to print on both side of the paper, or else you should omit this
+
+\documentclass[notitlepage,cs4size,punct,oneside]{ctexrep}
+
+% default paper settings, change it according to your word
+\usepackage[a4paper,hmargin={2.54cm,2.54cm},vmargin={3.17cm,3.17cm}]{geometry}
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{titlesec}
+
+% 公式编号的计数格式, 在章内计数
+\numberwithin{equation}{chapter}
+
+% set the abstract format, need abstract package
+
+\usepackage[runin]{abstract}
+
+%使用hyperref宏包, 对目录, 公式引用, 文献引用做超链接, 超链接方便电子版的阅读, 但不影响打印
+% pdfborder对超链接的边框大小进行设置, 模板中默认边框大小为0
+% colorlinks=true, 表示超链接对应的文字采用超链接边框的颜色, =false时保持原字体颜色
+% linkcolor=blue, 设置超链接边框的颜色, 可以改为red,green等等.
+% CJKbookmarks=true, 生成PDF中文书签,
+% 非CTEX套装用户可能发现即便如此设置, 生成的PDF书签也是乱码, 需要用GBK2UNI.EXE解决
+\usepackage[pdfborder={0 0 0},colorlinks=true,linkcolor=blue,CJKbookmarks=true]{hyperref}
+%若要用LATEX编译, 请用下面的命令替代上述命令：
+%\usepackage[dvipdfm,pdfborder={0 0 0},colorlinks=true,linkcolor=blue,CJKbookmarks=true]{hyperref}
+
+\setlength{\absleftindent}{1.5cm} \setlength{\absrightindent}{1.5cm}
+\setlength{\abstitleskip}{-\parindent}
+\setlength{\absparindent}{0cm}
+
+% Theorem style
+\newtheoremstyle{mystyle}{3pt}{3pt}{\kaishu}{0cm}{\heiti}{}{1em}{}
+\theoremstyle{mystyle}
+
+\newtheorem{definition}{\hspace{2em}定义}[chapter]
+% 如果没有章, 只有节, 把上面的[chapter]改成[section]
+\newtheorem{theorem}[definition]{\hspace{2em}定理}
+\newtheorem{axiom}[definition]{\hspace{2em}公理}
+\newtheorem{lemma}[definition]{\hspace{2em}引理}
+\newtheorem{proposition}[definition]{\hspace{2em}命题}
+\newtheorem{corollary}[definition]{\hspace{2em}推论}
+\newtheorem{remark}{\hspace{2em}注}[chapter]
+%类似地定义其他“题头”. 这里“注”的编号与定义、定理等是分开的
+
+\def\theequation{\arabic{chapter}.\arabic{equation}}
+\def\thedefinition{\arabic{chapter}.\arabic{definition}.}
+
+% title - \zihao{1} for size requirement \heiti for font family requirement
+\title{{\zihao{1}\heiti{} 数学学院毕业论文模版}}
+
+\author{作者姓名\\学号：您的学号\\专业：您的专业}
+
+\date{}
+%%%%%%%%%%%%%%%%%%%导言区设置完毕
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%Styles for chapters/section
+%若要将章标题左对齐, 用下面这个语句替换相应的设置
+%\CTEXsetup[nameformat={\raggedright\zihao{3}\bfseries},%
+\CTEXsetup[nameformat={\zihao{3}\heiti},%
+           titleformat={\zihao{3}},%
+           beforeskip={0.8cm},afterskip={1.2cm}]{chapter}
+\CTEXsetup[nameformat={\zihao{4}\bfseries},%
+           titleformat={\zihao{4}},%
+           name={第~,~节},number={\arabic{section}},%
+           beforeskip={0.4cm},afterskip={0.4cm}]{section}
+\CTEXsetup[format={\zihao{-4}\bfseries},%
+           titleformat={\zihao{-4}},%
+           number={\arabic{section}.\arabic{subsection}.},%
+           beforeskip={0.4cm},afterskip={0.4cm}]{subsection}
+\CTEXoptions[abstractname={摘要：}]
+\CTEXoptions[bibname={\heiti 参考文献}]
+
+\renewcommand{\thepage}{\roman{page}}
+\setcounter{page}{1}
+\tableofcontents\clearpage
+
+\maketitle\renewcommand{\thepage}{\arabic{page}}
+\thispagestyle{empty}\setcounter{page}{0}
+%%%  论文的页码从正文开始计数, 摘要页不显示页码
+% 撰写论文的摘要
+\renewcommand{\abstractname}{摘要}
+\begin{abstract}
+这是我的中文摘要\\
+\noindent{\heiti 关键字:} 正文写法, 公式写法, 参考文献写法.
+\end{abstract}
+\renewcommand{\abstractname}{Abstract}
+\begin{abstract}
+This is my English abstract.\\
+\noindent{\textbf{Keywords:}} 正文写法, 公式写法, 参考文献写法.
+\end{abstract}
+
+
+\chapter{总论}
+
+这是复旦大学数学科学学院本科生毕业论文~\TeX ~版本的模板.
+
+\section{为什么可以使用\LaTeX{}？}
+学校要求毕业论文用~Word~撰写. 鉴于数学论文的特殊性, 学校允许
+我院学生使用~\TeX~编写毕业论文. 但是, 对于申报校优秀毕业论文的,
+也许仍然
+需要使用~Word~版本（相应的模板已经给出）\footnote{请上数学科学学院网站下载}.
+今年的毕业论文格式就以此为标准. 但是
+我们仍然欢迎同学们提供好的建议以便使下一届学生的毕业论文格式更为合理.
+
+\subsection{一些注意事项}
+本模板提供的格式应该是数学论文写作中的一些通行格式. 目的是为初学者提供一个选择. 若有与指导老师讲的不一致
+之处, 则更可能是我们打印错误, 此时请和教务员联系.
+
+\CTeX 套装的~2.8 版似乎并不稳定. 请大家下载其他稳定的版本. 
+
+\subsection{~\TeX~ 资源}
+~\TeX~的下载：\href{http://www.ctex.org/HomePage}{http://www.ctex.org/HomePage}
+
+~\TeX~的论坛： \href{http://bbs.ctex.org/}{http://bbs.ctex.org/}
+
+
+\chapter{正文行文}
+\section{文章标题}
+使用文章标题样式, 是居中, 黑体, 一号字.
+
+\section{章标题}
+使用三号字, 黑体, 居中对齐.
+
+\section{节标题}
+使用小三号字, 黑体, 居中对齐.
+
+\section{子节标题}
+使用小四号字, 黑体, 靠左对齐.
+
+\section{正文}
+使用小四号字, 行距为20磅. 首行缩进两个字符宽. 建议标点符号用半角.
+例如句号用``句点". 输入时每个标点后打一个空格.
+
+\section{章节} 如果文章内容较多, 可以采用分章节. 如果内容较少, 可以只用节而不用章. 章节的编号方式(编号类型等的选择)要恰当.
+
+\chapter{公式排版}
+这部分介绍如何正确使用公式编排.
+\begin{equation}\label{N-L}
+F(b)-F(a)=\int^b_a F^\prime(x)\, dx.
+\end{equation}
+
+
+\section{行内公式}
+如果~$x=y,y=z$, 那么我们可以推得~$x=z$. 如果式子过长,
+应该写成行间公式.
+
+\section{行间公式}
+如果~$x=y$, 那么
+$$
+f(x) = f(y)
+$$
+但是, 若~$x\neq y$, 我们也不能获得
+\begin{equation}\label{E1}
+f(x) \neq f(y)
+\end{equation}
+所以~(\ref{E1}) 不是~$x\ne y$ 的必要条件.
+
+下面是另外的例子：第一个公式不标号, 请注意命令\texttt{\textbackslash
+nonumber}的使用：
+\begin{eqnarray}
+\nonumber W_{i,a}^{\text{new}} & \leftarrow & W_{i,a} \sum_{\mu} \frac{V_{i,\mu}}{(WH)_{i,\mu}} H_{a,\mu} \\
+H_{a,\mu}^{\text{new}} & \leftarrow & H_{a,\mu} \sum_{i} W_{i,a} \frac{V_{i,\mu}}{(WH)_{i,\mu}} \label{eq:renewh}\\
+W_{i,a}^{\text{new}} & \leftarrow & \frac{W_{i,a}}{\sum_{j}W_{j,a}}
+\end{eqnarray}
+如果所有公式都不标号, 可以采用下面的环境:
+\begin{eqnarray*}
+(\arcsin x)^2 &=& \Big( \sum^\infty_{k=0}{C^k_{2k}\over
+2k+1}{x^{2k+1}\over 2^{2k}}\Big)^2\\
+&=& \sum^\infty_{k=0}\sum^\infty_{j=0}{C^k_{2k}C^j_{2j}\over
+(2k+1)(2j+1)}{x^{2k+2j+2}\over 2^{2k+2j}}\\
+& =& \sum^\infty_{n=0}\sum_{k+j=n}{C^k_{2k}C^j_{2j}\over
+(2k+1)(2j+1)}{x^{2n+2}\over 2^{2n}}\\
+& =& \sum^\infty_{n=0}{(2x)^{2n+2}\over 2C^{n+1}_{2n+2}(n+1)^2}.
+\end{eqnarray*}
+
+
+
+更多公式环境的使用以及一些数学符号的使用可以参考一些\LaTeX 的书籍.
+\par 本模板中, 在每章开头, 公式标号重新计数.
+一章中, 即使换节, 计数并不重新开始(比较(\ref{N-L}), (\ref{E1})), 请注意
+公式编号的引用以及对应的超链接效果.
+
+若各节的公式需要重新编号, 可自行修改, 比如利用命令
+\begin{verbatim}
+\def\theequation{\arabic{chapter}.\arabic{section}.\arabic{equation}}
+
+(或 \def\theequation{3.2.\arabic{equation}})
+
+\setcounter{equation}{0}
+\end{verbatim}
+利用以上命令也可以解决诸如引入带撇的编号``3.1.3$^\prime$", 以及回到正常编号的重新编号问题.
+
+\def\theequation{\arabic{chapter}.\arabic{section}.\arabic{equation}}
+\setcounter{equation}{0}
+
+上述命令下的公式编号:
+\begin{equation}
+\lim_{n\to +\infty}\Big(1+{1\over n}\Big)^n=e.
+\end{equation}
+定义、定理、例子等的编号格式也可以用类似命令.
+
+\chapter{表格和图片}
+\begin{table}[htbp]\centering
+\begin{tabular}{llll}
+\hline\hline
+Dataset             & Before      & After     & Percentage \\
+\hline
+ALL/AML leukaemia   & 7129        & 1038      & 14.56      \\
+Breast Cancer       & 24 481      & 834       & 3.41       \\
+CNS embryonal tumous& 7129        & 74        & 1.04       \\
+Colon tumour        & 7129        & 135       & 1.89       \\
+Lung cancer         & 12 533      & 5365      & 42.81      \\
+Prostate cancer     & 12 600      & 3071      & 24.37      \\
+outcome             & 12 600      & 208       & 1.65       \\
+\hline
+\end{tabular}
+\caption{这是个表格}\label{tab:hh}
+\end{table}
+
+如果插图, 可以考虑下面的命令：
+\begin{verbatim}
+\includegraphics[options]{yourfile}
+\end{verbatim}
+具体命令参考~graphicx~宏包说明,
+值得注意的是用~PDF\, LATEX~编译是不支持插入~EPS~格式图片的,
+不过将~EPS~格式图片转换为~PDF~后就可以插入了. 限于条件限制, 本模板不给出插入图片的示例.
+\par
+论文中的数据图例可以由~MatLab~制作（比如数据模拟图）,
+一般的图例（含流程图, 交换图等）可由~MetaPost~
+或者~Asymptote~作出（当然作图工具不限于此）, 限于条件限制,
+模板不给出示例.
+
+\chapter{定理环境}
+
+\section{题头}
+同一章内定理、引理等``题头"可以采用连续/统一的标号, 这是由模板中的诸如
+``\verb+\newtheorem{theorem}[definition]{定理}+ "这样的命令中的``\verb+ [definition]+"选项确定的, 它使所有定理采用和定义统一编号：
+\begin{lemma}\label{L1} 对于任何实数$A$, 成立着$A^2\geq 0$.
+\end{lemma}
+
+
+\begin{theorem}\label{T1} 设$A,B$是两个实数, 则$2AB\leq A^2+B^2$.
+\end{theorem}
+
+\section{同章另一节的题头}
+
+\begin{corollary}\label{P1} 设$a,b$为两个正数, 则其几何平均不大于其算术平均, 即
+$\displaystyle \sqrt{ab}\leq {a+b\over 2}$.
+\end{corollary}
+
+\chapter{参考文献的写法}
+
+所有参考文献均用尾注形式列在论文篇末, 内容包括：主要负责人(作者,
+编者) 文献题名. 出版地, 出版年份, 起止页码.
+(如果文献是期刊杂志内的文章, 则除要列出作者和题名外, 还要注明期刊名,
+出版时间, 卷号或期号, 起止页码).
+
+英文出版物见\cite{HTF}, 国际会议见\cite{ZhangC},
+英文期刊见\cite{ChenSX}.
+
+中文出版物见\cite{ChenJX}, 中文期刊见\cite{Su}.
+
+建议文献排序按作者姓氏的字母排序, 同一作者的文章按时间先后排列.
+英文姓名的写法有先姓后名(\cite{LiT})和先名后姓(\cite{ChenSX})两种写法,
+请统一到其中一种.
+
+\textbf{注意``参考文献"不写成论文的一章. }
+
+\chapter*{\heiti 致谢}
+
+请对帮助过你完成论文的老师、同学致谢. 也可以在此对您四年大学生活有重要帮助的人致谢.
+
+\textbf{``致谢"本身不作为一章，致谢内容的字体大小不宜与作为标题的``致谢"两字的大小有很大的反差. 这一点尤其请使用word模板的同学注意. } 一般说来, 杂志论文的致谢在文章正文结束、参考文献前(即本模板中它所处的位置);  学位论文的致谢在最后一页，并宜单独成页; 书籍的致谢在序言结尾.
+
+感谢~2001 级的何力同学和李湛同学根据学校关于毕业论文的格式要求于~2005 年设计了本模板.
+感谢~2004 级的张越同学在~2008 年对模板进行了修改.
+
+欢迎其他同对模板进行修改, 以适宜新的编译环境等. 特别, 我们欢迎尽量简单的新模板.
+
+相关事宜请和楼红卫老师或杜雅倩老师联系. 
+
+ \footnotesize
+\begin{thebibliography}{99}
+\bibitem{HTF} T. Hastie et al., The Element of Statistical
+Learning, Springer Series in Statistics, Springer-Verlag， 2001.
+\bibitem{ChenSX} S. Chen, Mach configuration in pseudo-stationary compressible
+flow, \emph{J. Amer. Math. Soc.}, 21(2008), no. 1, pp. 63--100.
+\bibitem{ZhangC} Junping Zhang, Li He, and Zhi-Hua Zhou, ``Analyzing Magnification Factors
+and Principal Spead Directions in Manifold Learning'', in
+\emph{Proceedings of the 9th Online World Conference on Soft
+Computing in Industrial Applications (WSC9)}, 2004.
+\bibitem{ChenJX} 陈纪修，淤崇华, 金路, 数学分析, 高等教育出版社，1999.
+%\bibitem{ChenHong} 陈恕行, 洪家兴, 偏微分方程近代方法, 复旦大学出版社, 1988.
+\bibitem{Su} 苏步青，数学教育与应用数学问题, 数学通报, 1988, (2): 1--2.
+\bibitem{LiT} Li, T. and Chen, Y., Global classical solutions for nonlinear
+evolution equations, Pitman Monographs and Surveys in Pure and
+Applied Mathematics, 45, Longman Scientific \& Technical, Harlow.
+\end{thebibliography}
+
+
+
+%\bibliographystyle{plain}
+%\bibliography{../ml}
+\end{document}
