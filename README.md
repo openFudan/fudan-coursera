@@ -25,8 +25,8 @@
 <!--  -->
 
 <details><summary>1.通识教育</summary>
-
-<details><summary>1.1思想政治</summary>
+<br>
+<details><summary>  1.1思想政治</summary>
   
 * [国外马克思主义思潮](./1.通识教育/思想政治/国外马克思主义思潮)
 * [马克思主义基础](./1.通识教育/思想政治/马克思主义基础)
@@ -34,12 +34,12 @@
 * [中国近现代史纲要](./1.通识教育/思想政治/中国近现代史纲要)
 </details>
 
-<details><summary>1.2七大模块</summary>
+<details><summary>  1.2七大模块</summary>
   
 * [日本文明的历史变迁](./1.通识教育/七大模块/日本文明的历史变迁)
 </details>
 
-<details><summary>1.3大学英语</summary>
+<details><summary>  1.3大学英语</summary>
   
 * [大学英语三级](./1.通识教育/大学英语/大学英语三级)
 * [英语视听](./1.通识教育/大学英语/英语视听)
@@ -47,19 +47,20 @@
 * [FET](./1.通识教育/大学英语/FET)
 </details>
 
-<details><summary>1.4创新创意创业</summary>
+<details><summary>  1.4创新创意创业</summary>
 
 * [1.4创新创意创业](./1.通识教育/创新创意创业)
 </details>
 
-<details><summary>1.5通识教育选修</summary>
+<details><summary>  1.5通识教育选修</summary>
 
 * [改变生活的生物技术](./1.通识教育/通识教育选修/改变生活的生物技术)
 </details>
 </details>
 
 <details><summary>2.基础教育</summary>
-<details><summary>2.1计算机科学与技术</summary>
+<br>
+<details><summary>  2.1计算机科学与技术</summary>
   
 * [基础物理实验](./2.基础教育/计算机科学与技术/基础物理实验)
 * [线性代数](./2.基础教育/计算机科学与技术/线性代数)
@@ -67,8 +68,10 @@
 </details>
 
 <details><summary>3.专业教育</summary>
-<details><summary>3.1计算机科学与技术</summary>
-<details><summary>3.1.1专业必修</summary>
+<br>
+<details><summary>  3.1计算机科学与技术</summary>
+<br>
+<details><summary>    3.1.1专业必修</summary>
   
 * [代数结构与数理逻辑](./3.专业教育/计算机科学与技术/专业必修/代数结构与数理逻辑)
 * [操作系统](./3.专业教育/计算机科学与技术/专业必修/操作系统)
@@ -89,7 +92,7 @@
 
 </details>
 
-<details><summary>3.1.2专业选修</summary>
+<details><summary>    3.1.2专业选修</summary>
   
 * [人工智能](./3.专业教育/计算机科学与技术/专业选修/人工智能)
 * [信息论基础](./3.专业教育/计算机科学与技术/专业选修/信息论基础)
