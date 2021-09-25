@@ -1,0 +1,158 @@
+#ifndef ARRAY_CLASS
+#define ARRAR_CLASS
+#include<iostream>
+#include<cstdlib>
+using namespace std;
+#ifndef NULL
+const int NULL = 0;
+#endif  //定义NULL=0
+//错误类型集合
+enum ErrorType
+{
+	invalidArraySize, memoryAllocationError, indexOutOfRange
+
+};
+//错误信息
+char *errorMsg[] =
+{
+	"invalidArraySize",
+	"Memory allocation error",
+	"Invalid index:"
+};
+
+//数组类模板声明
+template <class T>
+class Array
+{
+private:
+	T* alist; //T指针类型，用于存放动态分配的数组内存首地址
+	int size;//数组大小
+	void Error(ErrorType error, int badIndex = 0) const;//错误处理函数
+public:
+	Array(int sz = 50);
+	Array(const Array<T>& A);//拷贝构造函数
+	~Array(void);//析构函数
+	Array<T>&operator =(const Array<T> &rhs);//重载“=”使得数组对象可以整体赋值
+	T& operator[](int i);//重载[]，使得Array 对象可以起到C++普通数组的作用
+	operator T*(void)const;//重载T*,使得Array对象可以起到C++普通数组的作用
+	int ListSize(void)const;//取数组大小；
+	void Resize(int sz);//修改数组的大小
+
+};
+//以下为类成员函数的定义
+//模板函数Error实现输出错误信息的功能
+template<class T>
+void Array<T>::Error(ErrorType error, int badIndex)const
+{
+	cout << errorMsg[error];
+	if (error == indexOutOfRange)
+		cout << badIndex;
+	cout << endl;
+	exit(1);
+}
+
+//构造函数
+template <class T>
+Array<T>::Array(int sz)
+{
+	if (sz <= 0)
+		Error(invalidArraySize);
+	size = sz;//将元素个数赋值给变量size
+	alist = new T[size];//动态分配内存，将size个T类型的元素空间分配出来
+	if (alist == NULL)
+		Error(memoryAllocationError);
+
+}
+//析构函数
+template<class T>
+Array<T>::~Array(void)
+{
+	delete[]alist;
+}
+
+//拷贝构造函数
+template <class T>
+Array<T>::Array(const Array<T>& X)
+{
+	//从对象X取得数组大小，并赋给当前对象成员
+	int n = X.size;
+	size = n;
+	//为对象申请内存并进行出错检测
+	alist = new T[n];
+	if (alist == NULL)
+		Error(memoryAllocationError);
+	//从对象X复制数组元素到本对象
+	T* srcptr = X.alist;//X.alist是对象X的数组首地址
+	T* destptr = alist;//alist是本对象中的数组首地址
+	while (n--)
+		*destptr++ = *srcptr++;
+}
+
+//重载'='
+template<class T>
+Array<T>& Array<T>::operator =(const Array<T> &rhs)
+{
+	int n = rhs.size;//取rhs数组的大小
+					 //如果本对象中的数组大小和rhs不同，则删除数组原有的内存，然后重新分配
+	if (size != n)
+	{
+		delete[]alist;
+		alist = new T[n];
+		if (alist == NULL)
+			Error(memoryAllocationError);
+		size = n;
+	}
+
+	//从rhs向本对象复制元素
+	T* destptr = alist;
+	T* srcptr = rhs.alist;
+	while (n--)
+		*destptr++ = *srcptr++;
+	return *this;//返回当前对象的引用
+}
+
+//重载[]
+template <class T>
+T &Array<T>::operator[](int n)
+{
+	if (n<0 || n>size - 1)
+		Error(indexOutOfRange, n);
+	return alist[n+1];
+}
+
+//重载指针转换运算
+template <class T>
+Array<T>::operator T*(void)const
+{
+	return alist;
+}
+
+//取当前数组大小
+template<class T>
+int Array<T>::ListSize(void)const
+{
+	return size;
+}
+
+//将数组大小修改为sz
+template <class T>
+void Array<T>::Resize(int sz)
+{
+	if (sz <= 0)
+		Error(invalidArraySize);
+	if (sz == size)
+		return;
+	T *newlist = new T[sz];
+	if (newlist == NULL)
+		Error(memoryAllocationError);
+	int n = (sz <= size) ? sz : size;
+	T *srcptr = alist;
+	T *destptr = newlist;
+	while (n--)
+		*destptr++ = *srcptr++;
+	delete[]alist;
+	alist = newlist;
+	size = sz;
+}
+#endif //ARRAY_CLASS
+
