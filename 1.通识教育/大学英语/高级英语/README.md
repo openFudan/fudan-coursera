@@ -52,7 +52,7 @@
 
 
 
-![](Essay writing tips.JPG)
+![](https://github.com/JinnyWong/fudan-coursera/blob/master/1.%E9%80%9A%E8%AF%86%E6%95%99%E8%82%B2/%E5%A4%A7%E5%AD%A6%E8%8B%B1%E8%AF%AD/%E9%AB%98%E7%BA%A7%E8%8B%B1%E8%AF%AD/Essay%20writing%20tips.JPG)
 
 
 
